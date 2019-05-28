@@ -1,0 +1,70 @@
+.htaccess
+*.htaccess
+.htaccess*
+*web.config
+*.log
+*.sql
+*.txt
+*.dt
+*.xml
+*.tar.gz*
+*.zip
+*.rar
+*.gz
+*.tar
+*.bak
+*.old
+*~
+*/_*
+_*
+*.bak
+composer.*
+
+cache/*
+
+# файлы среды разработки Netbeans
+nbproject/
+
+# файлы среды разработки от JetBrains (PHPStorm, WebStorm, etc)
+.idea/
+
+# исключаем папку bitrix полностью, но с некоторыми исключениями
+/bitrix/*
+# включаем папку components, но исключаем components/bitrix/
+!/bitrix/components
+/bitrix/components/bitrix/
+# включаем папку php_interface и исключаем файл dbconn.php
+!/bitrix/php_interface/
+/bitrix/php_interface/dbconn.php
+# включаем папку шаблонов сайта
+!/bitrix/templates/
+# исключаем служебные и ненужные папки проекта
+/upload
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.9
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.23
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.24
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.21
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.22
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.27
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.28
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.25
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.26
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.1
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.2
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.3
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.4
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.5
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.6
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.7
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.8
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.12
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.13
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.10
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.11
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.16
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.17
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.14
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.15
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.18
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.19
+/allacouture.com_20190528_065845_full_cb5c95c7.enc.gz.20

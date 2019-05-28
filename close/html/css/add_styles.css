@@ -1,0 +1,36 @@
+.header__logo {
+    margin: -10px auto 0px;
+    width: 41%;
+}
+.logo__slogan {
+	margin-top: 8px;
+}
+
+.header__top {
+    padding: 25px 0 22px;
+}
+
+.header__callback-link {
+	margin-top: 6px;
+    letter-spacing: 0.02em;
+}
+
+.header__callback-link:not(:first-child) {
+    margin-top: 0rem;
+}
+
+.header__email {
+    background-position: 0% 50% !important;
+}
+
+.header__social {
+	margin-top: 15px;
+}
+
+.header__nav {
+	margin-top: 38px;
+}
+
+.menu_main .menu__item {
+	padding-bottom: 10px;
+}
