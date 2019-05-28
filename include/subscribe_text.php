@@ -1,0 +1,1 @@
+<span style="font-size: 10pt;"><b>Узнайте о новинках и акциях</b></span>

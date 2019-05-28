@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Обмен";
+$arDirProperties = Array(
+
+);
+?>

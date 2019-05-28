@@ -1,0 +1,20 @@
+/*NOTE: This file is intended for programmers. Aspro technical support is not advised to work with him.*/
+
+/* Examples (uncomment to use):*/
+
+/* Expand site width */
+/* body .wrapper { max-width: 1400px !important;  } */
+
+/* Set site background image */
+/* body {  background: url(image_source) top no-repeat; }
+
+/* Hide compare button */
+/* a.compare_item { display: none !important;  }*/
+.detail .detailimage{z-index: 1;}
+.banner.CROP.TOP_HEADER{z-index:5;}
+#bx-soa-image-popup{box-shadow: 0 10px 25px rgba(0,0,0,.5);padding:0px;}
+#bx-soa-image-popup .popup-window-content{padding:0px;}
+#bx-soa-image-popup .popup-window-content img{max-width:100%;}
+#bx-soa-image-popup .popup-window-close-icon{width:30px;height:30px;top: -15px !important;right: -15px !important;background: #000;opacity: 1 !important;border-radius: 100%;}
+#bx-soa-image-popup .popup-window-close-icon:after{background: url(../images/close_icons.png) -35px -1px no-repeat;width: 14px;height: 14px;opacity: 1;margin-left: -7px;margin-top: -7px;transform: none;}
+.banners-content .img img {max-width:114%;}

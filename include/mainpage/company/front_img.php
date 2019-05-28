@@ -1,0 +1,1 @@
+<img width="247" alt="2018-09-18_15-47-10.png" src="/upload/medialibrary/71c/71c2d0b4cab1868e189cd96bc7986483.png" height="366" title="2018-09-18_15-47-10.png">
