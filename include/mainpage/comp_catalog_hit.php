@@ -9,7 +9,10 @@
 		"AREA_FILE_RECURSIVE" => "Y",
 		"EDIT_TEMPLATE" => "standard.php"
 	),
-	false
+	false,
+	array(
+		"ACTIVE_COMPONENT" => "N"
+	)
 );?>
 
 <?
@@ -17,8 +20,8 @@ session_start();
 if(empty($_SESSION["newcurrency"])){$currency = $arParams["CURRENCY_ID"];
 }else{$currency =$_SESSION["newcurrency"];};
 $APPLICATION->IncludeComponent(
-	"aspro:tabs.next", 
-	"main", 
+	"aspro:tabs.next",
+	"main_custom",
 	array(
 		"ACTION_VARIABLE" => "action",
 		"ADD_SECTIONS_CHAIN" => "N",
@@ -88,7 +91,7 @@ $APPLICATION->IncludeComponent(
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
 		"PROPERTY_CODE" => array(
-			0 => "",
+			0 => "CML2_ARTICLE",
 			1 => "MORE_PHOTO",
 			2 => "",
 		),
@@ -112,7 +115,7 @@ $APPLICATION->IncludeComponent(
 		"SHOW_MEASURE" => "Y",
 		"SHOW_OLD_PRICE" => "Y",
 		"SHOW_PRICE_COUNT" => "1",
-		"SHOW_RATING" => "Y",
+		"SHOW_RATING" => "N",
 		"STIKERS_PROP" => "HIT",
 		"STORES" => array(
 			0 => "",

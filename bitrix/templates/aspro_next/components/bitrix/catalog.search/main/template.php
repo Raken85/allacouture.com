@@ -887,7 +887,10 @@ if (is_array($arElements) && !empty($arElements))
 			"AREA_FILE_RECURSIVE" => "Y",
 			"EDIT_TEMPLATE" => "include_area.php"
 		),
-		false
+		false,
+        array(
+            "ACTIVE_COMPONENT" => "N"
+        )
 	);?>
 </div>
 <?endif;?>

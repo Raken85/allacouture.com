@@ -22,12 +22,13 @@ if($bAjaxMode)
 	/* hide compare link from module options */
 	if(CNext::GetFrontParametrValue('CATALOG_COMPARE') == 'N')
 		$arComponentParams["DISPLAY_COMPARE"] = 'N';
-	/**/
+	/**/$arComponentParams['CACHE_TYPE'] = 'N';
+	/**/$arComponentParams['CACHE_TYPE'] = 'N';
 	?>
 	
 	<?$APPLICATION->IncludeComponent(
 		"bitrix:catalog.section",
-		"catalog_block_front",
+		"catalog_block_front_custom",
 		$arComponentParams,
 		false, array("HIDE_ICONS"=>"Y")
 	);?>

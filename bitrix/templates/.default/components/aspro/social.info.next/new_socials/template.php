@@ -76,6 +76,12 @@
 				</a>
 			</li>
 		<?endif;?>
+
+        <li class="viber">
+            <a href="<?=GetMessage('TEMPL_SOCIAL_VIBER_LINK')?>" target="_blank" rel="nofollow" title="<?=GetMessage('TEMPL_SOCIAL_VIBER')?>">
+                <?=GetMessage('TEMPL_SOCIAL_VIBER')?>
+            </a>
+        </li>
 	</ul>
 	<!-- /noindex -->
 </div>
