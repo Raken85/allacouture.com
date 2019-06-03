@@ -1426,7 +1426,16 @@ background: #fff!important;
   border-color: #000000;
   background: #000000;
 }
-.svg-phone {
+.pull-right.logo_and_menu-row .phone>a{
+  top: 4px;
+  padding: 5px 5px;
+}
+.pull-right.logo_and_menu-row .phone>a:hover, .pull-right.logo_and_menu-row .phone>a:active, .pull-right.logo_and_menu-row .phone>a:focus{
+  color: #ffffff !important;
+  border-color: #000000;
+  background: #000000;
+}
+.top-block-item .phone .svg-phone {
   top: 2px;
 }
 .top-block .top-block-item .personal-link .name{
@@ -1464,6 +1473,68 @@ background: #fff!important;
     color: #1d2029
 }
 
+/* footer */
+.footer_inner .subscribe_wrap {
+    margin-top: -35px;
+}
+footer .ext_view .subscribe-form form.sform{
+    margin-top: -20px;
+}
+body .filter.label_block input + label{
+    color: #000000;
+}
+
+/* fly basket */
+.basket_wrapp .basket-link {
+    color: #969ba5;
+}
+.basket_wrapp .basket-link:hover {
+  color: #000000;
+}
+.fly_basket_name{
+    text-decoration: underline !important;
+    font-weight: normal !important;
+}
+.module-cart table td.thumb-cell a{
+    height: 90px;
+}
+.basket_wrapp .basket_fly .module-cart table td.cost-cell.notes {
+    padding-top: 36px;
+}
+.basket_fly .module-cart .colored tfoot td.row_titles .item_title {
+    margin-top: 0px;
+}
+
+/* basket */
+#basket-root .basket-checkout-container .basket-coupon-section.smallest {
+    margin-top: -13px;
+}
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+/* fast view */
+@media (min-width: 768px) {
+  .catalog_detail .props_list {
+    width: 100%;
+  }
+}
+.fast_view_frame.popup .bx_catalog_item_scu .bx_item_detail_scu ul li .cnt_item, .fast_view_frame.popup .bx_scu_scroller_container ul li .cnt_item {
+  width: 27px;
+  height: 27px;
+}
+.catalog_detail .middle_info .gift_form i {
+  margin-left: 6px;
+  border-radius: 0;
+  width: 16px;
+  height: 16px;
+  background: url(../images/ai.png) -136px -84px no-repeat;
+}
+#fast_view_item .item_slider .slides .offers_img img{
+  max-width: 120%;
+}
 
 /* Slider */
 .slick-slider

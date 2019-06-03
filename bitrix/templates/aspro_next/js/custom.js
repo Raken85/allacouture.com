@@ -61,6 +61,11 @@ onLoadjqm = function(name, hash, requestData, selector, requestTitle, isButton, 
         itemTitle = $('h1').first().text();
       }
 
+      if (one_click_buy_fast_view_params != 'undefined') {
+        itemTitle = one_click_buy_fast_view_params.title;
+        priceHtml = one_click_buy_fast_view_params.price;
+        propsHtml = one_click_buy_fast_view_params.props;
+      }
       if($('.buy_block .sku_props').length)
       {
         propsHtml = '<div class="props_item">';

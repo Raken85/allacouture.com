@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.ph
 \Bitrix\Main\Loader::includeModule("aspro.next");
 include_once("action_basket.php");
 
-$APPLICATION->IncludeComponent("bitrix:sale.basket.basket", "fly", array(
+$APPLICATION->IncludeComponent("bitrix:sale.basket.basket", "fly_custom", array(
 	"COLUMNS_LIST" => array(
 		0 => "NAME",
 		1 => "QUANTITY",

@@ -334,7 +334,7 @@ if (!empty($arParams['LABEL_PROP_POSITION']))
 			if ($usePriceInAdditionalColumn)
 			{
 				?>
-				<td class="basket-items-list-item-price basket-items-list-item-price-for-one<?=(!isset($mobileColumns['PRICE']) ? ' hidden-xs' : '')?>">
+				<td class="basket-items-list-item-price basket-items-list-item-price-for-one<?=(!isset($mobileColumns['PRICE']) ? ' hidden' : '')?>">
 					<div class="basket-item-block-price">
 						{{#SHOW_DISCOUNT_PRICE}}
 							<div class="basket-item-price-old">
