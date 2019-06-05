@@ -17,10 +17,10 @@ $mobileColumns = isset($this->arParams['COLUMNS_LIST_MOBILE'])
 $mobileColumns = array_fill_keys($mobileColumns, true);
 
 $result['BASKET_ITEM_RENDER_DATA'] = array();
-
 foreach ($this->basketItems as $row)
 {
 	$rowData = array(
+	    'SKU_COLOR_REF_NAME' => current($row['SKU_DATA']['n214']['VALUES'])['NAME'],
 		'ID' => $row['ID'],
 		'PRODUCT_ID' => $row['PRODUCT_ID'],
 		'NAME' => isset($row['~NAME']) ? $row['~NAME'] : $row['NAME'],

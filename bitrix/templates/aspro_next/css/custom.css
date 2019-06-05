@@ -1514,6 +1514,11 @@ body .filter.label_block input + label{
     display: none !important;
   }
 }
+.basket-sku-color-name {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  margin-bottom: -5px;
+}
 
 /* fast view */
 @media (min-width: 768px) {
@@ -1534,6 +1539,19 @@ body .filter.label_block input + label{
 }
 #fast_view_item .item_slider .slides .offers_img img{
   max-width: 120%;
+}
+.stickers .sticker_khit_prodazh {
+  background-color: #2992d9;
+}
+.stickers .sticker_khit_prodazh:after {
+  border-color: transparent transparent transparent #2992d9;
+}
+.item_main_info .stickers>div {
+  display: inline-block;
+  padding: 0 3px;
+}
+.item_main_info .stickers [class*="sticker_"]::after {
+  display: none;
 }
 
 /* Slider */

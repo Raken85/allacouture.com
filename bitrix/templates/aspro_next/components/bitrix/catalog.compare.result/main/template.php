@@ -248,7 +248,7 @@ $s=0;
 	{
 		foreach($arResult["SHOW_PROPERTIES"] as $code => $arProperty)
 		{
-			
+
 			$showRow = true;
 			if($arResult['DIFFERENT'])
 			{
@@ -314,11 +314,11 @@ $s=0;
 										<span onclick="CatalogCompareObj.MakeAjaxAction('<?=CUtil::JSEscape($arResult["ALL_FIELDS"][$code]["ACTION_LINK"])?>')" class="remove"><i></i></span>
 									<?}?>
 								</td>
-								
+
 								<?foreach($arResult["ITEMS"] as $arElement){?>
 									<td valign="top">
 										<?=$arElement["FIELDS"][$code];?>
-										
+
 									</td>
 								<?}
 								unset($arElement);?>

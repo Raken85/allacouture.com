@@ -190,6 +190,7 @@ if (!empty($arParams['LABEL_PROP_POSITION']))
 													<div class="basket-item-property basket-item-property-scu-image"
 														data-entity="basket-item-sku-block">
 														<div class="basket-item-property-name">{{NAME}}</div>
+                                                        <div class="basket-sku-color-name">{{SKU_COLOR_REF_NAME}}</div>
 														<div class="basket-item-property-value">
 															<ul class="basket-item-scu-list">
 																{{#SKU_VALUES_LIST}}

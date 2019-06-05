@@ -1,7 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <? $this->setFrameMode( true ); ?>
 <?if($arResult["SECTIONS"]){?>
-<div class="catalog_section_list row items flexbox">
+<div class="catalog_section_list row items flexbox" style="margin-top: -30px !important;">
 	<?foreach( $arResult["SECTIONS"] as $arItems ){
 		$this->AddEditAction($arItems['ID'], $arItems['EDIT_LINK'], CIBlock::GetArrayByID($arItems["IBLOCK_ID"], "SECTION_EDIT"));
 		$this->AddDeleteAction($arItems['ID'], $arItems['DELETE_LINK'], CIBlock::GetArrayByID($arItems["IBLOCK_ID"], "SECTION_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_SECTION_DELETE_CONFIRM')));
