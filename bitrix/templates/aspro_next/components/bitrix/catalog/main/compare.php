@@ -1,8 +1,8 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
-<?$APPLICATION->AddChainItem(GetMessage("CATALOG_COMPARE_TITLE"));?>
-<?$APPLICATION->SetPageProperty("title", GetMessage("CATALOG_COMPARE_TITLE"));?>
-<?$APPLICATION->SetTitle(GetMessage("CATALOG_COMPARE_TITLE"));?>
+<?$APPLICATION->AddChainItem(GetMessage("CATALOG_COMPARE_TITLE_CUSTOM"));?>
+<?$APPLICATION->SetPageProperty("title", GetMessage("CATALOG_COMPARE_TITLE_CUSTOM"));?>
+<?$APPLICATION->SetTitle(GetMessage("CATALOG_COMPARE_TITLE_CUSTOM"));?>
 <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH.'/js/sly.js');?>
 <?
 global $arTheme, $NextSectionID, $arRegion;
@@ -19,7 +19,7 @@ if(!in_array('ID', (array)$arParams["COMPARE_OFFERS_FIELD_CODE"]))
 ?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.compare.result",
-	"main",
+	"main_custom",
 	array(
 		"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 		"IBLOCK_ID" => $arParams["IBLOCK_ID"],

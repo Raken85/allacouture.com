@@ -1,4 +1,5 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("HIDE_LEFT_BLOCK", "Y");
 $APPLICATION->SetPageProperty("description", "Обширный каталог дизайнерской одежды от Аллы Кравченко. Десятки стильных нарядов ручной работы в интернет-магазине allacouture.com. Только качественные материалы, идеальный крой! Условия заказа по телефону: +7 (495) 150-54-98.");
 $APPLICATION->SetPageProperty("title", "Каталог одежды ручной работы от бренда AllaCouture, купить одежду от дизайнера из Москвы");
 $APPLICATION->SetTitle("Каталог");
