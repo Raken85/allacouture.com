@@ -1552,6 +1552,12 @@ background: #fff!important;
 .fast_view_frame.popup .item_slider .slides {
   height: 377px;
 }
+.fast_view_read_more {
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+  text-decoration: underline;
+}
 
 .stickers .sticker_khit_prodazh {
   background-color: #2992d9;

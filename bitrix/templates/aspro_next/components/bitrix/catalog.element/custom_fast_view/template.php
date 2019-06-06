@@ -466,9 +466,6 @@ setViewedProduct(<?=$arResult['ID']?>, <?=CUtil::PhpToJSObject($arViewedData, fa
 			<?endif;?>
 			<?$frame->end();?>
 		</div>
-        <div class="button_block">
-            <a href="<?=$arResult['DETAIL_PAGE_URL']?>" class="btn btn-default basket read_more">Подробнее</a>
-        </div>
 	</div>
 	<div class="right_info">
 		<div class="info_item scrollbar">
@@ -616,6 +613,9 @@ setViewedProduct(<?=$arResult['ID']?>, <?=CUtil::PhpToJSObject($arViewedData, fa
 			</div>
 		</div>
 	</div>
+    <div class="fast_view_read_more">
+        <a href="<?=$arResult['DETAIL_PAGE_URL']?>">Подробнее</a>
+    </div>
 	<?/*
 	<?if($arParams["SHOW_KIT_PARTS"] == "Y" && $arResult["SET_ITEMS"]):?>
 		<div class="set_wrapp set_block">
