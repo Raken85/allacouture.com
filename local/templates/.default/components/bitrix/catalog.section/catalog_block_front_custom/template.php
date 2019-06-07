@@ -243,6 +243,7 @@ opacity:1;
                         nextText: '>',
                         prevSelector: prev,
                         prevText: '<',
+                        touchEnabled: false,
                         onSliderLoad: function () {
                             $(this).parents('.bx-wrapper').css('margin-right', '8px');
                         }
