@@ -23,7 +23,6 @@ if($bAjaxMode)
 	if(CNext::GetFrontParametrValue('CATALOG_COMPARE') == 'N')
 		$arComponentParams["DISPLAY_COMPARE"] = 'N';
 	/**/$arComponentParams['CACHE_TYPE'] = 'N';
-	/**/$arComponentParams['CACHE_TYPE'] = 'N';
 	?>
 	
 	<?$APPLICATION->IncludeComponent(

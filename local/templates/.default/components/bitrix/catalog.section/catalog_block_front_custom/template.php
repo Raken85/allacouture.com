@@ -3,6 +3,10 @@
 <?if( count( $arResult["ITEMS"] ) >= 1 ){?>
 	<div class="top_wrapper items_wrapper">
 		<div class="fast_view_params" data-params="<?=urlencode(serialize($arTransferParams));?>"></div>
+        <div class="bx_nav">
+            <div class="bx_nav_prev bx_nav_arrow"></div>
+            <div class="bx_nav_next bx_nav_arrow"></div>
+        </div>
 		<div class="catalog_block items row margin0">
 		<?foreach($arResult["ITEMS"] as $arItem){?>
 
@@ -211,4 +215,39 @@ opacity:1;
 		<?}?>
 		</div>
 	</div>
+    <script>
+            var width = $('.tabs_content').width();
+            var width20;
+            var maxSlides;
+            if (width < 700) {
+                width20 = width/2;
+                maxSlides = 2;
+            } else {
+                width20 = width/5;
+                maxSlides = 5;
+            }
+
+            console.log(width);
+            console.log(width20);
+            $('.catalog_block').each(function () {
+                if (!($(this).hasClass('bx_slider_active'))) {
+                    var nav = $(this).siblings('.bx_nav');
+                    var prev = $(nav).find('.bx_nav_prev');
+                    var next = $(nav).find('.bx_nav_next');
+                    $(this).addClass('bx_slider_active');
+                    var slider = $(this).bxSlider({
+                        slideWidth: width20,
+                        minSlides: maxSlides,
+                        maxSlides: maxSlides,
+                        nextSelector: next,
+                        nextText: '>',
+                        prevSelector: prev,
+                        prevText: '<',
+                        onSliderLoad: function () {
+                            $(this).parents('.bx-wrapper').css('margin-right', '8px');
+                        }
+                    });
+                }
+            });
+    </script>
 <?}?>
