@@ -1251,7 +1251,7 @@ body .soc-avt .row a{display:inline-block;margin: 5px 11px 5px 0px;}
 	#headerfixed .menu-block.rows:hover .navs > ul{display:block !important;box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);}
 	#headerfixed .menu-block.rows:hover .navs ul{animation: toggle_opacity 300ms;background:#fff;}
 	#headerfixed .menu-block.rows .navs ul li{padding:0px;display: block;float: none;margin:0px;}
-	#headerfixed .menu-block.rows .navs .fixed_menu_ext .dropdown-toggle .fixed_menu_ext {position:static; display:block;}
+	#headerfixed .menu-block.rows .navs .fixed_menu_ext .dropdown-toggle .fixed_menu_ext {position:static; /*display:block*/;}
 	#headerfixed .menu-block.rows .navs .fixed_menu_ext .dropdown-toggle .fixed_menu_ext li a {font-size: 13px; padding-left: 40px!important; position: relative; border-top: none;}
 	#headerfixed .menu-block.rows .navs .fixed_menu_ext .dropdown-toggle .fixed_menu_ext li a:hover, #headerfixed .menu-block.rows .navs .fixed_menu_ext .dropdown-toggle a:hover {background:#222222; color:#fff;}
 	#headerfixed .menu-block.rows .navs .fixed_menu_ext .dropdown-toggle  a i {display:none;}

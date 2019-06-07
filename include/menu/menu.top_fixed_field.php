@@ -13,7 +13,7 @@
 		"MAX_LEVEL" => "3",
 		"ALLOW_MULTI_SELECT" => "Y",
 		"ROOT_MENU_TYPE" => "top_content_multilevel",
-		"CHILD_MENU_TYPE" => "left",
+		"CHILD_MENU_TYPE" => "submenu_fixed",
 		"CACHE_SELECTED_ITEMS" => "N",
 		"USE_EXT" => "Y",
 		"COMPOSITE_FRAME_MODE" => "N",

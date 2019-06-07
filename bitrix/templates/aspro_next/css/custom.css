@@ -1458,6 +1458,12 @@ background: #fff!important;
 .best_block.tab_slider_wrapp ul.tabs_content{
     margin-top: 0px;
 }
+#headerfixed .menu-block.rows .navs li ul.dropdown-submenu:hover > ul.fixed_menu_ext {
+    display: block !important;
+}
+#headerfixed .menu-block.rows .navs .fixed_menu_ext .dropdown-toggle a i {
+    display: inline-block;
+}
 
 /* HIT */
 .catalog_block .catalog_item img, .product_slider .catalog_item img{
@@ -1497,7 +1503,11 @@ background: #fff!important;
     font-weight: normal !important;
 }
 .module-cart table td.thumb-cell a{
-    height: 90px;
+    height: 110px;
+    width: 100px;
+}
+.basket_wrapp .module-cart .goods {
+    max-height: 305px;
 }
 .basket_wrapp .basket_fly .module-cart table td.cost-cell.notes {
     padding-top: 36px;
@@ -1550,13 +1560,34 @@ background: #fff!important;
   padding: 40px 5px 5px 5px;
 }
 .fast_view_frame.popup .item_slider .slides {
-  height: 377px;
+  height: 420px;
+    margin: 0 0 0 90px;
+    max-width: 70%;
 }
 .fast_view_read_more {
   position: absolute;
   bottom: -15px;
   right: 10px;
   text-decoration: underline;
+}
+/* slider vertical*/
+.catalog_detail .img_wrapper .wrapp_thumbs {
+    position: absolute;
+    top: 50px;
+}
+.catalog_detail .wrapp_thumbs .sliders {
+    height: 500px;
+    position: relative;
+}
+.catalog_detail .wrapp_thumbs .thumbs {
+    position: absolute !important;
+    float: left;
+}
+.catalog_detail .wrapp_thumbs .slides_block {
+    width: 100% !important;
+}
+.catalog_detail .wrapp_thumbs .custom_flex .flex-direction-nav {
+    display: none;
 }
 
 .stickers .sticker_khit_prodazh {
@@ -1576,9 +1607,12 @@ background: #fff!important;
   padding-top: 0px;
 }
 
+.wraps > .wrapper_inner {
+    padding-top: 0px;
+}
 
 
-
+/* /catalog/compare.php */
 .bx_compare .frame {
   margin: 0px 0px 0px 230px;/*margin: 0;*/
 }
