@@ -1543,65 +1543,69 @@ background: #fff!important;
 
 /* fast view */
 @media (min-width: 768px) {
-  #fast_view_item .catalog_detail .props_list {
+    .fast_view_frame.popup .catalog_detail .props_list {
     width: 100%;
   }
 }
-#fast_view_item .fast_view_frame.popup .bx_catalog_item_scu .bx_item_detail_scu ul li .cnt_item, .fast_view_frame.popup .bx_scu_scroller_container ul li .cnt_item {
+.fast_view_frame.popup .bx_catalog_item_scu .bx_item_detail_scu ul li .cnt_item, .fast_view_frame.popup .bx_scu_scroller_container ul li .cnt_item {
   width: 27px;
   height: 27px;
 }
-#fast_view_item .catalog_detail .middle_info .gift_form i {
+.fast_view_frame.popup .catalog_detail .middle_info .gift_form i {
   margin-left: 6px;
   border-radius: 0;
   width: 16px;
   height: 16px;
   background: url(../images/ai.png) -136px -84px no-repeat;
 }
-#fast_view_item .item_slider .slides .offers_img img {
+.fast_view_frame.popup .item_slider .slides .offers_img img {
   max-width: 120%;
 }
-#fast_view_item .fast_view_frame.popup{
+.fast_view_frame.popup{
   max-width: 1070px;
   width: 1070px;
 }
-#fast_view_item .fast_view_frame.popup .catalog_detail .item_main_info .img_wrapper {
+.fast_view_frame.popup .catalog_detail .item_main_info .img_wrapper {
   width: 350px;
   padding: 40px 5px 5px 5px;
 }
-#fast_view_item .fast_view_frame.popup .item_slider .slides {
+.fast_view_frame.popup .item_slider .slides {
   height: 420px;
     margin: 0 0 0 90px;
     max-width: 70%;
 }
-#fast_view_item .fast_view_read_more {
+.fast_view_frame.popup .fast_view_read_more {
     font-size: 13px;
   position: absolute;
   bottom: -15px;
   right: 10px;
   text-decoration: underline;
 }
-#fast_view_item .fast_view_read_more a {
+.fast_view_frame.popup .fast_view_read_more a {
     color: #666;
 }
 /* slider vertical*/
-#fast_view_item .catalog_detail .img_wrapper .wrapp_thumbs {
+.fast_view_frame.popup .catalog_detail .img_wrapper .wrapp_thumbs {
     position: absolute;
     top: 50px;
+    left: 10px;
 }
-#fast_view_item .catalog_detail .wrapp_thumbs .sliders {
+.fast_view_frame.popup .catalog_detail .wrapp_thumbs .sliders {
     height: 500px;
     position: relative;
 }
-#fast_view_item .catalog_detail .wrapp_thumbs .thumbs {
+.fast_view_frame.popup .catalog_detail .wrapp_thumbs .thumbs {
     position: absolute !important;
     float: left;
 }
-#fast_view_item .catalog_detail .wrapp_thumbs .slides_block {
+.fast_view_frame.popup .catalog_detail .wrapp_thumbs .slides_block {
     width: 100% !important;
 }
-#fast_view_item .catalog_detail .wrapp_thumbs .custom_flex .flex-direction-nav {
+.fast_view_frame.popup .catalog_detail .wrapp_thumbs .custom_flex .flex-direction-nav {
     display: none;
+}
+.fast_view_frame.popup .item_slider .slides a.line_link {
+    margin-top: 15px;
 }
 
 .stickers .sticker_khit_prodazh {
