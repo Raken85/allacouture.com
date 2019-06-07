@@ -1449,7 +1449,11 @@ background: #fff!important;
     background: #000000;
 }
 .top-block .social-icons li.viber a:before, #headerfixed .social-icons li.viber a:before{
-    background: #909090 url(../images/svg/social/Viber.svg) 0 0 no-repeat;
+    background: url(../images/svg/social/Viber.svg) 0 0 no-repeat;
+    background-size: contain;
+}
+.top-block .social-icons li a:hover, #headerfixed .social-icons li a:hover {
+    opacity: 0.6;
 }
 .social-icons ul li.viber a {
     background-position: -284px -123px;
@@ -1463,6 +1467,9 @@ background: #fff!important;
 }
 #headerfixed .menu-block.rows .navs .fixed_menu_ext .dropdown-toggle a i {
     display: inline-block;
+}
+#headerfixed .menu-block.rows .navs .fixed_menu_ext .dropdown-submenu .dropdown-menu li {
+    border-bottom: 1px solid #f0f0f0;
 }
 
 /* HIT */
@@ -1489,6 +1496,9 @@ background: #fff!important;
 }
 .footer_inner .subscribe_wrap .filter.label_block input + label{
     color: #000000;
+}
+#footer .copy-block {
+    display: flex;
 }
 
 /* fly basket */
@@ -1615,6 +1625,12 @@ background: #fff!important;
     padding-top: 0px;
 }
 
+.img_wrapper .wrapp_thumbs.top-small-wrapper {
+    width: 85px;
+}
+#photo-0 {
+    height: 650px;
+}
 
 /* /catalog/compare.php */
 .bx_compare .frame {
@@ -1624,7 +1640,7 @@ background: #fff!important;
   width: 327px;/*standart 230px; custom 327px;*/
   min-width: 327px;/*standart 230px; custom 327px;*/
   max-width: 327px;/*standart 230px; custom 327px;*/
-  border: 1px solid #0000003b;
+  border: 1px solid #f2f2f2;
   text-align: center;
 }
 .image_wrapper_block, .image_wrapper_block a {
@@ -1694,7 +1710,7 @@ background: #fff!important;
 }
 .bx_nav_arrow {
     padding: 0px 10px;
-    border: 1px solid grey;
+    border: 1px solid #eee;
 }
 .bx_nav_next {
     margin-left: 10px;
