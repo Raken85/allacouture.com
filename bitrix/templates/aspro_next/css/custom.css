@@ -1503,9 +1503,18 @@ background: #fff!important;
 #footer .copy-block {
     display: flex;
 }
+#footer .bottom-under .inner-wrapper .copy-block > div {
+    display: flex;
+}
+#currency {
+    margin-left: 10px;
+}
 
 #photo-0 {
     height: 650px;
+}
+.img_wrapper .top-small-wrapper .bx-controls-direction a {
+    left: 32px;
 }
 
 /* fly basket */
@@ -1531,6 +1540,9 @@ background: #fff!important;
 }
 .basket_fly .module-cart .colored tfoot td.row_titles .item_title {
     margin-top: 0px;
+}
+.basket_wrapp .basket_fly .module-cart table td.thumb-cell {
+    padding: 0px 18px 0px 29px;
 }
 
 /* basket */
