@@ -226,9 +226,6 @@ opacity:1;
                 width20 = width/5;
                 maxSlides = 5;
             }
-
-            console.log(width);
-            console.log(width20);
             $('.catalog_block').each(function () {
                 if (!($(this).hasClass('bx_slider_active'))) {
                     var nav = $(this).siblings('.bx_nav');
@@ -245,7 +242,13 @@ opacity:1;
                         prevText: '<',
                         touchEnabled: false,
                         onSliderLoad: function () {
-                            $(this).parents('.bx-wrapper').css('margin-right', '8px');
+                            var wrapper = $(this).parents('.bx-wrapper');
+                            var width = $(wrapper).css('max-width');
+                            var maxWidth = Math.floor(Number(width.replace('px', '')) / 100);
+                            if (maxWidth > 9) {
+                                maxWidth = 8;
+                            }
+                            $(this).parents('.bx-wrapper').css('margin-right', maxWidth + 'px');
                         }
                     });
                 }
