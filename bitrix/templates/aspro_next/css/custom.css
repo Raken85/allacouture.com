@@ -1710,10 +1710,12 @@ background: #fff!important;
     min-height: 675px;
     margin-bottom: -145px;
     padding: 2px;
+    float: left;
 }
 .bx_nav {
     display: flex;
-    margin-left: 94%;
+    float: right;
+    margin-right: 9px;
 }
 .bx_nav_arrow {
     padding: 0px 10px;
