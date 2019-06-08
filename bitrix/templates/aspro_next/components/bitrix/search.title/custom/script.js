@@ -339,12 +339,12 @@ function JCTitleSearch2(arParams)
 
 		pos.width = pos.right - pos.left;
 		_this.RESULT.style.top = (pos.bottom + 28) + 'px';
-		_this.RESULT.style.left = pos_input.left + 'px';
+		_this.RESULT.style.left = (pos_input.left - 10) + 'px';
 
 		if($(_this.INPUT).closest('.inline-search-block.with-close').length)
-			_this.RESULT.style.width = pos_input.width + 'px';
+			_this.RESULT.style.width = (pos_input.width + 78) + 'px';
 		else
-			_this.RESULT.style.width = pos.width + 'px';
+			_this.RESULT.style.width = (pos.width + 78) + 'px';
 		return pos;
 	};
 

@@ -1451,6 +1451,9 @@ background: #fff!important;
 .top-block .social-icons li.viber a:before, #headerfixed .social-icons li.viber a:before{
     background: url(../images/svg/social/Viber.svg) 0 0 no-repeat;
     background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin: -8px 0 0 -14px;
 }
 .top-block .social-icons li a:hover, #headerfixed .social-icons li a:hover {
     opacity: 0.6;
