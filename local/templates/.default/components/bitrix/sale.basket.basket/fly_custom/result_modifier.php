@@ -202,7 +202,24 @@
             }
         }
     }
+
+    $terminationName = array(
+        'Юбки' => 'Юбка',
+        'Накидки' => 'Накидка',
+        'Платья' => 'Платье',
+        'Комбинезоны' => 'Комбинезон',
+        'Блузки' => 'Блузка',
+        'Топы' => 'Топ',
+        'Жакеты' => 'Жакет',
+        'Жилеты' => 'Жилет',
+        'Купальники' => 'Купальник',
+        'Костюмы' => 'Костюм'
+    );
     foreach ($arResult['GRID']['ROWS'] as &$arItem) {
-        $arItem['SECTION_NAME'] = $items[$arItem['PRODUCT_ID']];
+        $sectionName = $items[$arItem['PRODUCT_ID']];
+        if (array_key_exists($sectionName, $terminationName)) {
+            $sectionName = $terminationName[$sectionName];
+        }
+        $arItem['SECTION_NAME'] = $sectionName;
     }
 ?>
