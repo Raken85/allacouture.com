@@ -61,8 +61,8 @@ $arCounters = CNext::updateBasketCounters(array('READY' => array('COUNT' => $nor
 		</div>
 		<?if(CNext::GetFrontParametrValue('CATALOG_COMPARE') != 'N'):?>
 			<div title="<?=$arCounters['COMPARE']['TITLE']?>" class="compare_count small">
-				<?/*<a href="<?=$arCounters['COMPARE']['HREF']?>"></a>*/?>
-				<span class="hidden-link-class" data-link="<?=$arCounters['COMPARE']['HREF']?>"></span>
+				<a href="<?=$arCounters['COMPARE']['HREF']?>"></a>
+				<?/*<span class="hidden-link-class" data-link="<?=$arCounters['COMPARE']['HREF']?>"></span>*/?>
 				<div id="compare_fly" class="wraps_icon_block compare <?=(!$arCounters['COMPARE']['COUNT'] ? ' empty_block' : '')?>">
 					<div class="count<?=(!$arCounters['COMPARE']['COUNT'] ? ' empty_items' : '')?>">
 						<span>
