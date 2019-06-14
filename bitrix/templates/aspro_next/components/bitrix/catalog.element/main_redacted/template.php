@@ -426,7 +426,7 @@ setViewedProduct(<?=$arResult['ID']?>, <?=CUtil::PhpToJSObject($arViewedData, fa
 					<div class="offers_img wof">
 						<?$alt=$arFirstPhoto["ALT"];
 						$title=$arFirstPhoto["TITLE"];?>
-						<?if($arFirstPhoto["BIG"]["src"]){?>
+						<?if(false && $arFirstPhoto["BIG"]["src"]){?>
 							<a href="<?=$arFirstPhoto["BIG"]["src"];?>" id="photozoom" class="<?=($viewImgType=="POPUP" ? "popup_link" : "line_link");?>" title="<?=$title;?>">
 								<img id="<? echo $arItemIDs["ALL_ITEM_IDS"]['PICT']; ?>" src="<?=$arFirstPhoto['SMALL']['src']; ?>" <?=($viewImgType=="MAGNIFIER" ? 'data-large="" data-xpreview="" data-xoriginal=""': "");?> alt="<?=$alt;?>" title="<?=$title;?>" itemprop="image">
 								<div class="zoom"></div>

@@ -216,14 +216,17 @@ opacity:1;
 		</div>
 	</div>
     <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            $('.items_wrapper .bx_nav').remove();
+        } else {
             var width = $('.tabs_content').width();
             var width20;
             var maxSlides;
             if (width < 700) {
-                width20 = width/2;
+                width20 = width / 2;
                 maxSlides = 2;
             } else {
-                width20 = width/5;
+                width20 = width / 5;
                 maxSlides = 5;
             }
             $('.catalog_block').each(function () {
@@ -253,5 +256,6 @@ opacity:1;
                     });
                 }
             });
+        }
     </script>
 <?}?>
