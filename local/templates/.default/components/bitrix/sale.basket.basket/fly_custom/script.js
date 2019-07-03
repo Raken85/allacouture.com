@@ -88,7 +88,7 @@ function delete_all_items(type, item_section, correctSpeed){
 	var index=(type=="delay" ? "2" : "1");
 	if(type == "na")
 		index = 4;
-	$.post( arNextOptions['SITE_DIR']+'ajax/show_basket_fly.php', 'PARAMS='+$("#basket_form").find("input#fly_basket_params").val()+'&TYPE='+index+'&CLEAR_ALL=Y', $.proxy(function( data ) {
+	$.post( arNextOptions['SITE_DIR']+'ajax/show_basket_fly.php', 'PARAMS='+$("#basket_form").find("input#fly_basket_params").val()+'&TYPE='+index+'&CLEAR_ALL=Y&CLEAR_FLY=Y', $.proxy(function( data ) {
 		basketFly('open');
 		$('.in-cart').hide();
 		$('.in-cart').closest('.button_block').removeClass('wide');

@@ -23,7 +23,14 @@
 		}
 	}
 	$arItems=CNext::getBasketItems($iblockID, "ID");
-	if($_POST["TYPE"] == "all" || $_POST["CLEAR_ALL"] == "Y")
+	if($_POST['CLEAR_FLY'] == 'Y')
+	{
+		foreach($arItems[$type] as $id)
+		{
+			CSaleBasket::Delete($id);
+		}
+	}
+	elseif($_POST["TYPE"] == "all" || $_POST["CLEAR_ALL"] == "Y")
 	{
 		foreach($arItems as $key => $arItem)
 		{
