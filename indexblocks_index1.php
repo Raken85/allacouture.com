@@ -189,7 +189,7 @@
 	);?>
 </div>
 
-<?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
+<?/*$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
 	array(
 		"COMPONENT_TEMPLATE" => ".default",
 		"PATH" => SITE_DIR."include/mainpage/comp_instagramm.php",
@@ -199,4 +199,4 @@
 		"EDIT_TEMPLATE" => "standard.php"
 	),
 	false
-);?>
+);*/?>
