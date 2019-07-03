@@ -1,0 +1,1 @@
+Согласие&nbsp;на <a href="/help/confidentiality/" target="_blank">обработку персональных данных</a>

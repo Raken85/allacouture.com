@@ -1,0 +1,32 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"История", 
+		"/about/history/", 
+		Array(), 
+		Array(), 
+		"false" 
+	),
+	Array(
+		"Коллекции", 
+		"/about/collections/", 
+		Array(), 
+		Array(), 
+		"false" 
+	),
+	Array(
+		"Пресса", 
+		"/about/news/", 
+		Array(), 
+		Array(), 
+		"false" 
+	),
+	Array(
+		"AllaCoutureLady", 
+		"/about/allacouturelady/", 
+		Array(), 
+		Array(), 
+		"false" 
+	)
+);
+?>

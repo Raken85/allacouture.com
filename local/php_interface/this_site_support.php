@@ -1,0 +1,1 @@
+<a href="https://www.pixelplus.ru" ><img src="https://www.pixelplus.ru/bitrix/pixel_logo.png"  /></a>

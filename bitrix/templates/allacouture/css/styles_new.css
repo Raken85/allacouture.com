@@ -1,0 +1,304 @@
+.footer__scroll-top-btn {
+	top: -5px;
+    width: 37px;
+    height: 37px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.menu__subitem_active {
+	text-decoration: underline !important;
+}
+.footer__scroll-top-btn:hover {
+	width: 60px;
+	height: 60px;
+}
+.menu_main .menu__item_active > .menu__link {
+    border-bottom: 1px solid #fff;
+}
+.footer__email-btn {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.footer__email-btn:hover {
+	color: #000;
+	background-color: #fff;
+}
+.text-center {
+	text-align: center;
+}
+.friends__catalog-list .btn-wrap {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.modal__header2 {
+	font-size: 28px;
+	font-weight: bold;
+	color: #c49d42;
+	margin-bottom: 15px;
+	text-align: center;
+    line-height: 1.5;
+}
+.modal__before-text {
+	text-align: center;
+	margin: 10px 0 25px;
+	line-height: 1.5;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modal .form__submit.button.button_medium {
+	width: auto;
+}
+
+.button.button_medium {
+	height: 37px;     
+	min-width: 169px;
+	padding: 0 44px;
+	letter-spacing: 0.03em; 
+	line-height: 33px;      
+	text-align: center;  
+}
+.form__footer_2 {
+	margin-top: 20px;
+}
+
+.form-agree_small {
+    margin-top: 14px;
+}
+.modal__before-text.modal__before-text_small {
+	font-size: 12px;
+    line-height: 1.34;
+    margin-top: 17px;
+    margin-bottom: 19px;
+    max-width: 311px;
+}
+
+.form-agree_small label {
+	padding-left: 0;
+    font-size: 10px;
+    padding: 0;
+    line-height: 12px;
+    display: block;
+    width: 373px;
+    letter-spacing: 0.0em;
+}
+.modal .field input {
+	height: 31px;
+	box-sizing: border-box;
+	width: 100%;
+}
+.field textarea {
+	height: 4.35em;
+}
+.fileupload label {
+    padding: .6em 0;
+}
+#modal-friends .form__field.checkbox {
+	margin-top: 7px;
+    font-size: 10px;
+    letter-spacing: 0.0em;
+    padding: 0;
+}
+#modal-friends .form__field.checkbox label {
+	padding-left: 0;
+    line-height: 1.2;
+}
+
+#modal-friends  .form__submit {
+    padding: .65em .5em;
+}
+
+.page-news .slick-arrow {
+	width: 21px;
+	height: 21px;
+}
+.page-news .slick-next {
+	right: -30px;
+}
+.page-news .slick-prev {
+	left: -30px;
+}
+
+.friend-card .friend-card__hover {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.friend-card:hover .friend-card__hover {
+	display: flex;
+}
+
+a.full {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 1;
+}
+
+.news_preview:not(.news-list__item_full) .news__announce.news__more-link {
+    font-size: 1.1em;
+    font-style: italic;
+    text-decoration: underline;
+    opacity: 1;
+}
+.friend-card__goto {
+	position: static;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transform: none;
+    transform: none;
+}
+
+
+@media screen and (min-width: 1101px) {
+	.footer__email-btn {
+	    letter-spacing: 0.03em;
+	    padding-left: .5em;
+	}
+	.footer__alla-copyright {
+	    left: 49.8%;
+	}
+	.footer .social__link_facebook {
+    	background-size: 101%;
+	}
+	.footer .social__link {
+		width: 21px;
+		height: 21px;
+	}
+	.social__link+.social__link {
+	    margin-left: .4em;
+	}
+	.footer .social__link_vk {
+	    background-size: 299%;
+	    background-position: -33px -8px;
+	    width: 41px !important;
+	    height: 24px;
+	    margin-right: 0;
+	    margin-left: 2px;
+	}
+
+	.menu_footer .menu__link.title {
+		line-height: 1.9;
+	}
+	.menu_footer .menu__link {
+		line-height: 1.75;
+	}
+	.footer__top .footer__menu_1 .menu__link.title {
+		margin-bottom: 3px;
+	}
+	.footer .messengers__link {
+	    width: 27px;
+	    height: 27px;
+	}
+	.messengers__link_telegram {
+		margin-left: 5px;
+	}
+	.messengers__header {
+		margin-bottom: .1em;
+	}
+	.footer__messengers {
+		/*margin-bottom: 0;*/
+	}
+	.footer__inner {
+		max-width: 1409px;
+	}
+	.footer {
+        padding: 3.3em 0 .4em;
+    }
+    .footer__alla-copyright {
+	    line-height: 1.75;
+        bottom: 1.1rem;
+    }
+    .footer__logo > img {
+        position: absolute;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        left: 50%;
+        top: 7.6%;
+        width: 387px;
+    }
+	.footer__social {
+		margin-bottom: .7em;
+	}
+    .footer__payments {
+        margin-top: -6px;
+    }
+
+	.payments__header {
+	    margin-bottom: .5em;
+	}
+	.footer__top .footer__right-col {
+	    -webkit-box-flex: 0.93;
+	    -webkit-flex: 0.93;
+	    -ms-flex: 0.93;
+	    flex: 0.93;
+	}
+	
+}
+
+@media (max-width: 768px) {
+	.footer__scroll-top-btn:hover {
+		width: 43px;
+		height: 43px;
+	}
+}
+@media (max-width: 500px) {
+	.form-agree_small label {
+		max-width: 100%;
+	}
+}
+
+.visible-xs {
+	display: none;
+}
+@media (max-width: 320px) {
+	.visible-xs {
+		display: block;
+	}
+	.hidden-xs {
+		display: none;
+	}
+	.modal {
+	    padding: 2.5em 0.95em 2.8em 0.95em;
+	    max-width: 100%;
+	}
+	.modal__header2 {
+		font-size: 16px;
+	    margin-bottom: 6px;
+	}
+	.form__footer_2 {
+		margin-top: 16px;
+	}
+	.modal__before-text {
+		font-size: 12px;
+	    line-height: 1.2;
+    	margin-bottom: 12px;
+	}
+	.modal .form__submit.button {
+		font-size: 14px;
+	}
+	.form__field.checkbox {
+		margin-top: 6px;
+	}
+	.fileupload label {
+		font-size: 14px;
+	}
+	#modal-friends .form__submit,
+	#modal-friends .form__footer {
+		width: 100%;
+	}
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}

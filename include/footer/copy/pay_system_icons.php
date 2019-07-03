@@ -1,0 +1,3 @@
+<i title="Мир" class="cacsh"></i> <i title="MasterCard" class="mastercard"></i> <i title="Visa" class="visa"></i> <i title="Sberbank" class="sbrf"></i> <i title="Yandex" class="yandex_money"></i> <i title="PayPal" class="alfa"></i> <i title="Tinkoff" class="qiwi"></i>
+<link rel="stylesheet" href="/bitrix/templates/aspro_next/css/jquery-ui.min.css">
+<script src="/bitrix/templates/aspro_next/js/jquery-ui.min.js"></script>
