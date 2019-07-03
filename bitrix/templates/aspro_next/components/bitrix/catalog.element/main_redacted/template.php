@@ -363,6 +363,13 @@ $arViewedData = array(
 <script type="text/javascript">
 setViewedProduct(<?=$arResult['ID']?>, <?=CUtil::PhpToJSObject($arViewedData, false)?>);
 </script>
+<script>
+    var one_click_buy_fast_view_params = {
+        title: '<?=$arResult['NAME']?>',
+        price: '<?=$arResult['MIN_PRICE']['PRINT_DISCOUNT_VALUE']?>',
+        props: '<?=$arResult['PROPERTIES']['SIZES']['VALUE']?>'
+    };
+</script>
 <meta itemprop="name" content="<?=$name = strip_tags(!empty($arResult['IPROPERTY_VALUES']['ELEMENT_PAGE_TITLE']) ? $arResult['IPROPERTY_VALUES']['ELEMENT_PAGE_TITLE'] : $arResult['NAME'])?>" />
 <meta itemprop="category" content="<?=$arResult['CATEGORY_PATH']?>" />
 <meta itemprop="description" content="<?=(strlen(strip_tags($arResult['PREVIEW_TEXT'])) ? strip_tags($arResult['PREVIEW_TEXT']) : (strlen(strip_tags($arResult['DETAIL_TEXT'])) ? strip_tags($arResult['DETAIL_TEXT']) : $name))?>" />
