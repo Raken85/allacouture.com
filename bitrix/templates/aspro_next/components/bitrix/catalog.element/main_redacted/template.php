@@ -926,29 +926,30 @@ $APPLICATION->IncludeComponent("step2use:kupivcredit.button", "template1", Array
 				</div>
 			<?endif;?>
 			<div class="element_detail_text wrap_md">
-				<div class="price_txt">
-					<?$APPLICATION->IncludeFile(SITE_DIR."include/element_detail_text.php", Array(), Array("MODE" => "html",  "NAME" => GetMessage('CT_BCE_CATALOG_DOP_DESCR')));?>
-					<? /* ==================== edost НАЧАЛО (блок расчета) */ ?>
-					<?
-						$product_id = $arResult['ID'];
-						if (!empty($arResult['OFFERS']) && is_array($arResult['OFFERS'])) foreach ($arResult['OFFERS'] as $v) { $product_id = $v['ID']; break; }
-					//    if (!empty($arResult['LINKED_ELEMENTS']) && is_array($arResult['LINKED_ELEMENTS'])) foreach ($arResult['LINKED_ELEMENTS'] as $v) { $product_id = $v['ID']; break; }
-						$product_name = str_replace(array('"', "'"), array('&quot;', '&quot;'), $arResult['NAME']);
-					?>
-						<div style="padding-top: 5px 0 5px 0; border-width: 1px 0 1px 0; border-style: solid; border-color: #E5E5E5;">
-							<span id="edost_catalogdelivery_inside_city_head" style="display: none; color: #000;">Доставка в </span> <span id="edost_catalogdelivery_inside_city" style="font-weight: bold; padding: 5px 0px;"></span>
-							<div id="edost_catalogdelivery_inside" style="padding: 5px 0px;">
-								<div style="text-align: center;"><img style="vertical-align: top;" src="/bitrix/components/edost/catalogdelivery/images/loading.gif" width="64" height="64" border="0"></div>
-							</div>
-							<div id="edost_catalogdelivery_inside_detailed" style="padding: 0px"></div>
-						</div>
+                <?if(false):?>
+                    <div class="price_txt">
+                        <?$APPLICATION->IncludeFile(SITE_DIR."include/element_detail_text.php", Array(), Array("MODE" => "html",  "NAME" => GetMessage('CT_BCE_CATALOG_DOP_DESCR')));?>
+                        <? /* ==================== edost НАЧАЛО (блок расчета) */ ?>
+                        <?
+                            $product_id = $arResult['ID'];
+                            if (!empty($arResult['OFFERS']) && is_array($arResult['OFFERS'])) foreach ($arResult['OFFERS'] as $v) { $product_id = $v['ID']; break; }
+                        //    if (!empty($arResult['LINKED_ELEMENTS']) && is_array($arResult['LINKED_ELEMENTS'])) foreach ($arResult['LINKED_ELEMENTS'] as $v) { $product_id = $v['ID']; break; }
+                            $product_name = str_replace(array('"', "'"), array('&quot;', '&quot;'), $arResult['NAME']);
+                        ?>
+                            <div style="padding-top: 5px 0 5px 0; border-width: 1px 0 1px 0; border-style: solid; border-color: #E5E5E5;">
+                                <span id="edost_catalogdelivery_inside_city_head" style="display: none; color: #000;">Доставка в </span> <span id="edost_catalogdelivery_inside_city" style="font-weight: bold; padding: 5px 0px;"></span>
+                                <div id="edost_catalogdelivery_inside" style="padding: 5px 0px;">
+                                    <div style="text-align: center;"><img style="vertical-align: top;" src="/bitrix/components/edost/catalogdelivery/images/loading.gif" width="64" height="64" border="0"></div>
+                                </div>
+                                <div id="edost_catalogdelivery_inside_detailed" style="padding: 0px"></div>
+                            </div>
 
-					<script type="text/javascript">
-						edost_RunScript('preview', '<?=$product_id?>', '<?=$product_name?>'); // запуск расчета
-					</script>
-					<? /* ==================== edost КОНЕЦ */ ?>
-				</div>
-
+                        <script type="text/javascript">
+                            edost_RunScript('preview', '<?=$product_id?>', '<?=$product_name?>'); // запуск расчета
+                        </script>
+                        <? /* ==================== edost КОНЕЦ */ ?>
+                    </div>
+                <?endif;?>
 			<?if (false) {?>
 				<div class="p-card__details">
 					<div class="p-card__town">
