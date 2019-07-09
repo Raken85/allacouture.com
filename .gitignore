@@ -38,5 +38,7 @@ nbproject/
 /bitrix/php_interface/dbconn.php
 # включаем папку шаблонов сайта
 !/bitrix/templates/
+# включаем файл CAsproSku.php
+!/bitrix/modules/aspro.next/lib/functions/CAsproSku.php
 # исключаем служебные и ненужные папки проекта
 /upload
