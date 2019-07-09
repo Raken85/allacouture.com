@@ -228,7 +228,8 @@ if($productSlider){
 		$productSlider[$i] = array_merge(
 			$arImage, array(
 				"BIG" => array('src' => CFile::GetPath($arImage["ID"])),
-				"SMALL" => CFile::ResizeImageGet($arImage["ID"], array("width" => 500, "height" => 700), BX_RESIZE_IMAGE_PROPORTIONAL, true, array()),
+				"SMALL" => array('src' => CFile::GetPath($arImage["ID"])),
+				//"SMALL" => CFile::ResizeImageGet($arImage["ID"], array("width" => 500, "height" => 700), BX_RESIZE_IMAGE_PROPORTIONAL, true, array()),
 				"THUMB" => CFile::ResizeImageGet($arImage["ID"], array("width" => 170, "height" => 170), BX_RESIZE_IMAGE_PROPORTIONAL, true, array()),
 			)
 		);
