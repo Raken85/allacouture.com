@@ -1351,11 +1351,14 @@ $APPLICATION->IncludeComponent("step2use:kupivcredit.button", "template1", Array
 					<a href="#review" data-toggle="tab"><span><?=($arParams["TAB_REVIEW_NAME"] ? $arParams["TAB_REVIEW_NAME"] : GetMessage("REVIEW_TAB"))?></span><span class="count empty"></span></a>
 				</li>
 			<?endif;?>
-			<?if(($arParams["SHOW_ASK_BLOCK"] == "Y") && (intVal($arParams["ASK_FORM_ID"]))):?>
+			<?if(false && ($arParams["SHOW_ASK_BLOCK"] == "Y") && (intVal($arParams["ASK_FORM_ID"]))):?>
 				<li class="product_ask_tab <?=(!($iTab++) ? ' active' : '')?>">
 					<a href="#ask" data-toggle="tab"><span><?=($arParams["TAB_FAQ_NAME"] ? $arParams["TAB_FAQ_NAME"] : GetMessage('ASK_TAB'))?></span></a>
 				</li>
 			<?endif;?>
+            <li class="product_ask_tab <?=(!($iTab++) ? ' active' : '')?>">
+                <a href="#ask" data-toggle="tab"><span>Условия доставки</span></a>
+            </li>
 			<?if($useStores && ($showCustomOffer || !$arResult["OFFERS"] )):?>
 				<li class="stores_tab<?=(!($iTab++) ? ' active' : '')?>">
 					<a href="#stores" data-toggle="tab"><span><?=($arParams["TAB_STOCK_NAME"] ? $arParams["TAB_STOCK_NAME"] : GetMessage("STORES_TAB"));?></span></a>
@@ -2079,7 +2082,7 @@ $APPLICATION->IncludeComponent("step2use:kupivcredit.button", "template1", Array
 			<?if($arParams["USE_REVIEW"] == "Y"):?>
 				<div class="tab-pane <?=(!($iTab++) ? 'active' : '')?>" id="review"></div>
 			<?endif;?>
-			<?if(($arParams["SHOW_ASK_BLOCK"] == "Y") && (intVal($arParams["ASK_FORM_ID"]))):?>
+			<?if(false && ($arParams["SHOW_ASK_BLOCK"] == "Y") && (intVal($arParams["ASK_FORM_ID"]))):?>
 				<div class="tab-pane<?=(!($iTab++) ? ' acive' : '')?>" id="ask">
 					<div class="title-tab-heading visible-xs"><?=($arParams["TAB_FAQ_NAME"] ? $arParams["TAB_FAQ_NAME"] : GetMessage('ASK_TAB'))?></div>
 					<div class="row">
@@ -2092,6 +2095,14 @@ $APPLICATION->IncludeComponent("step2use:kupivcredit.button", "template1", Array
 					</div>
 				</div>
 			<?endif;?>
+            <div class="tab-pane<?=(!($iTab++) ? ' acive' : '')?>" id="ask">
+                <div class="title-tab-heading visible-xs">Условия доставки</div>
+                <div class="row">
+                    <div class="col-md-12 form_block">
+                        <?$APPLICATION->IncludeFile(SITE_DIR."include/terms_of_delivery.php", array(), array("MODE" => "html", "NAME" => 'Условия доставки'));?>
+                    </div>
+                </div>
+            </div>
 			<?if($useStores && ($showCustomOffer || !$arResult["OFFERS"] )):?>
 				<div class="tab-pane stores_tab<?=(!($iTab++) ? ' active' : '')?>" id="stores">
 					<div class="title-tab-heading visible-xs"><?=($arParams["TAB_STOCK_NAME"] ? $arParams["TAB_STOCK_NAME"] : GetMessage("STORES_TAB"));?></div>
