@@ -514,7 +514,7 @@ BX.ajax.UpdatePageNavChain = function(nav_chain)
   {
     obNavChain.innerHTML = nav_chain;
   }
-  $('.breadcrumbs > [itemprop="itemListElement"]:last-child > span > span').html($('h1#pagetitle').html());
+  $('.breadcrumbs > [itemprop="itemListElement"]:last-child > span > span').html($('h1#pagetitle').html().trim());
 };
 
 if(!funcDefined('initSelects')){
