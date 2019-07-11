@@ -5,33 +5,31 @@
 		<ul class="top">
 <li>
 
-<a rel="nofollow" href="tel:+74951505498" class="dark-color parent">
+<a rel="nofollow" href="tel:+74951505498" class="dark-color parent" style="font-weight: normal;">
 <i class="svg svg-phone"></i><span>+7 (495) 150-54-98</span></a>
 
 
 <i class="svg svg-whatsapp" style="
-    background: url(/bitrix/templates/aspro_next/css/../images/svg/social/Whatsapp.svg) no-repeat;
+    background: url(/bitrix/templates/aspro_next/css/../images/svg/social/Whatsapp_black.svg) no-repeat;
     background-size: 16px;
     background-position: center;
     float: left;
     left: 8px;top: 18px;
     z-index: 9999;
     "></i>
-<a href="whatsapp://send?phone=+79629624466" class="dark-color" style="
-    left: 10px;
-"target="_blank" rel="nofollow" title="WhatsApp">
+<a href="whatsapp://send?phone=+79629624466" class="dark-color" style="left: 10px;font-weight: normal;" target="_blank" rel="nofollow" title="WhatsApp">
 <span> +7 (962) 962-44-66</span></a>
 
-<p class="mob_menu_adress">
+<p class="mob_menu_adress" style="font-weight: normal;background-image: url('/images/adress_black.png');">
 <span>Адрес</span><br>
 109004 Москва<br>
 ул. Николоямская, дом 52 стр.1
 </p>
-<p class="mob_menu_adress" style="background: unset;">
+<p class="mob_menu_adress" style="background: unset;font-weight: normal;">
     U.A.E., Dubai,<br>
     Jumeirah one, La mer Central, 445-a unit
 </p>
-<p class="mob_menu_adress1">
+<p class="mob_menu_adress1" style="font-weight: normal;background-image: url(/images/clock_black.png);">
 <span>Режим работы</span><br>
 по предварительной записи
 </p>
