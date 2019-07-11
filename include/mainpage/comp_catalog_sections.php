@@ -42,7 +42,7 @@
  <span class="hidden-link-class" data-link="https://www.instagram.com/allacouture/" data-class="instagram_mainpage">Instagram <i>@</i><i>AllaCouture</i></span>
 </p>
  <b><span class="span2_mainpage">
-<div>
+<div class="instagram_remove_bottom_margin">
 	 <?$APPLICATION->IncludeComponent(
 	"aspro:instargam.next", 
 	"main", 

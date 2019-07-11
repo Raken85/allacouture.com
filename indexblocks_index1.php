@@ -109,7 +109,7 @@
 	</div>
 <?endif;?>
 
-<?if($isShowSale):?>
+<?if(false && $isShowSale):?>
 	<div class="grey_block">
 		<div class="maxwidth-theme">
 			<?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
