@@ -1,7 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();?>
 <?global $isShowSale, $isShowCatalogSections, $isShowCatalogElements, $isShowMiddleAdvBottomBanner, $isShowBlog;?>
 <div class="grey_block">
-	<div class="maxwidth-theme">
+	<div class="maxwidth-theme banner_custom">
 		<?$APPLICATION->IncludeComponent(
 	"aspro:com.banners.next", 
 	"top_one_banner", 
