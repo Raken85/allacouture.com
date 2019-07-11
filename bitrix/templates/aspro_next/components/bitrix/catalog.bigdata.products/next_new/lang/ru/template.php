@@ -24,5 +24,5 @@ $MESS["CATALOG_WISH_OUT"] = "В отложенных";
 $MESS["CATALOG_COMPARE"] = "Сравнить";
 $MESS["CATALOG_COMPARE_OUT"] = "В сравнении";
 $MESS["CATALOG_FROM"] = "от";
-$MESS["RECOMENDATION_TITLE"] = "Персональные рекомендации";
+$MESS["RECOMENDATION_TITLE"] = "Рекомендуем";
 ?>

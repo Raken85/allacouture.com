@@ -49,7 +49,7 @@ if($arResult['ITEMS']){?>
 	<div id="<?=$injectId?>_items" class="bigdata_recommended_products_items">
 		<?$class_block="s_".$this->randString();?>
 		<div class="viewed_slider common_product wrapper_block recomendation <?=$class_block;?>">
-			<div class="top_block">
+			<div class="top_block basket_bigdata_recommended_products">
 				<?$title_block=($arParams["TITLE_BLOCK"] ? $arParams["TITLE_BLOCK"] : GetMessage('RECOMENDATION_TITLE'));?>
 				<div class="title_block"><?=$title_block;?></div>
 			</div>
