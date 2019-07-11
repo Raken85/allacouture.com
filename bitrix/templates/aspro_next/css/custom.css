@@ -1732,6 +1732,9 @@ background: #fff!important;
     top: -18px;
     right: -15px;
 }
+
+#bx-soa-delivery {
+    display: none;
 }
 
 
