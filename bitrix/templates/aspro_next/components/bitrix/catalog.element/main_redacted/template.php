@@ -174,6 +174,7 @@ jQuery(function($){
 */?>
 <? /* ==================== edost НАЧАЛО (инициализация модуля) */ ?>
 <?
+if (false):
     $APPLICATION->IncludeComponent('edost:catalogdelivery', '', array(
         'PARAM' => array(
 //            'sort' => 'ASC', // 'ASC' - сортировка по возрастанию, 'cpcr:simple|edost:3|1' - сортировка по тарифам (работает только если нет модуля edost.delivery)
@@ -212,6 +213,7 @@ jQuery(function($){
         'CACHE_GROUPS' => 'Y',
 //        'CACHE_TIME' => '180',
     ), null, array('HIDE_ICONS' => 'Y'));
+endif;
 ?>
 
 <? /* ==================== edost КОНЕЦ */ ?>
