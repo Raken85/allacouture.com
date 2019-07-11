@@ -2095,7 +2095,7 @@ $APPLICATION->IncludeComponent("step2use:kupivcredit.button", "template1", Array
 					</div>
 				</div>
 			<?endif;?>
-            <div class="tab-pane<?=(!($iTab++) ? ' acive' : '')?>" id="ask">
+            <div class="tab-pane<?=(!($iTab++) ? ' active' : '')?>" id="ask">
                 <div class="title-tab-heading visible-xs">Условия доставки</div>
                 <div class="row">
                     <div class="col-md-12 form_block">
