@@ -34,7 +34,7 @@
 		"VIEW_MODE" => ""
 	)
 );?> <?endif;?>
-<p align="center" class="instagram_remove_margin">
+<p align="center" class="instagram_remove_top_margin">
  <span class="span1_mainpage"><br>
  </span>
 </p>

@@ -1749,7 +1749,7 @@ background: #fff!important;
     .top_slider_wrapp .flexslider .slides > li, .top_slider_wrapp .flexslider .slides > li, .top_slider_wrapp .flexslider .slides > li td, .top_slider_wrapp .flexslider .slides > li td, .top_slider_wrapp .flexslider, .top_slider_wrapp .flexslider {
         height: 180px;
     }
-    .instagram_remove_margin{
+    .instagram_remove_top_margin{
         margin-top: -90px;
     }
 }
