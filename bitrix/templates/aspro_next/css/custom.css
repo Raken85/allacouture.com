@@ -1794,7 +1794,7 @@ background: #fff!important;
     .catalog_detail.detail.element_custom .item_slider .slides{
         margin-top: 30px;
     }
-    .container .catalog_detail .item_main_info .stickers [class*="sticker_"]{
+    .stickers [class*="sticker_"]{
         font-size: 8px;
     }
 }
