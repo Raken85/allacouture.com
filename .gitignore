@@ -42,3 +42,5 @@ nbproject/
 !/bitrix/modules/aspro.next/lib/functions/CAsproSku.php
 # исключаем служебные и ненужные папки проекта
 /upload
+
+urlrewrite.php
