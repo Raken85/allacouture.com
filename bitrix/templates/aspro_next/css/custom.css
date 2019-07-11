@@ -1797,9 +1797,18 @@ background: #fff!important;
     .stickers [class*="sticker_"]{
         font-size: 8px;
     }
-    .catalog_detail .cost.prices .price{
+    .catalog_detail.detail.element_custom .cost.prices .price{
         font-size: 16px;
         font-weight: normal;
+    }
+    .catalog_detail.detail.element_custom .buy_block .to-cart{
+        width: 100%;
+    }
+    .info_item .middle_info .buy_block .wrapp_one_click{
+        text-align: unset;
+    }
+    .catalog_detail.detail.element_custom .buy_block .wrapp_one_click .one_click{
+        margin-right: 20px;
     }
 }
 

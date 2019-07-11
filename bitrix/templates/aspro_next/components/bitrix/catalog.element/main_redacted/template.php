@@ -2348,5 +2348,12 @@ if ($arResult['CATALOG'] && $arParams['USE_GIFTS_MAIN_PR_SECTION_LIST'] == 'Y' &
 		ADD_ERROR_COMPARE: '<? echo GetMessage("ADD_ERROR_COMPARE"); ?>',
 		ONE_CLICK_BUY: '<? echo GetMessage("ONE_CLICK_BUY"); ?>',
 		SITE_ID: '<? echo SITE_ID; ?>'
-	})
+	});
+	$(document).ready(function () {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            $('#s2u-open-credit-button').appendTo('.wrapp_one_click');
+            $('#s2u-credit-window-text').appendTo('.wrapp_one_click');
+            $('.wrapp_one_click .white').removeClass('white');
+        }
+    });
 </script>
