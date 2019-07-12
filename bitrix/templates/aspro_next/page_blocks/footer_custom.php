@@ -73,7 +73,7 @@
 				</div>
 				<div class="col-md-5">
 					<div class="row">
-						<div class="col-lg-6 col-md-12 col-sm-6">
+						<div class="col-lg-6 col-md-12 col-sm-6 hidden-xs">
 							<?$APPLICATION->IncludeComponent(
 	"bitrix:main.include", 
 	".default", 
