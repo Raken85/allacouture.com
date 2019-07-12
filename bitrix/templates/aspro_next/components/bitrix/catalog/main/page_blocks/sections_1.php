@@ -1,6 +1,6 @@
 <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section.list",
-	"sections_list",
+	"sections_list_custom",
 	Array(
 		"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 		"IBLOCK_ID" => $arParams["IBLOCK_ID"],
