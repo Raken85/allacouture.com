@@ -1,0 +1,12 @@
+@media (max-width: 767px) {
+    .best_block.tab_slider_wrapp .item .catalog_item .item_info {
+        text-align: left !important;
+        padding-left: 150px;
+    }
+    .catalog_block .item-stock{
+        margin-left: 0 !important;
+    }
+    .wrapper_inner .cost.prices .price{
+        margin-left: 0 !important;
+    }
+}
