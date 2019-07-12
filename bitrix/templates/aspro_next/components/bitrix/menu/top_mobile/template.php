@@ -21,7 +21,7 @@
 <span> +7 (962) 962-44-66</span></a>
 
 <p class="mob_menu_adress" style="font-weight: normal;background-image: url('/images/adress_black.png');">
-<span>Адрес</span><br>
+<span>Шоу-рум</span><br>
 109004 Москва<br>
 ул. Николоямская, дом 52 стр.1
 </p>
