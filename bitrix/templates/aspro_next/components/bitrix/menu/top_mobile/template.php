@@ -5,7 +5,7 @@
 		<ul class="top">
 <li>
 
-<a rel="nofollow" href="tel:+74951505498" class="dark-color parent" style="font-weight: normal;">
+<a rel="nofollow" href="tel:+74951505498" target="_blank" class="dark-color" style="font-weight: normal;">
 <i class="svg svg-phone"></i><span>+7 (495) 150-54-98</span></a>
 
 
