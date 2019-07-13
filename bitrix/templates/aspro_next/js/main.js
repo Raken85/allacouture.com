@@ -3395,6 +3395,7 @@ $(document).ready(function(){
 					}
 					$wrap.data('params', params)
 				}
+				$('body').css('overflow', 'hidden');
 			}
 		}
 
@@ -3432,6 +3433,7 @@ $(document).ready(function(){
 						$scroller.css('height', '')
 					}, 400)
 				}
+                $('body').css('overflow', 'visible');
 			}
 		}
 
