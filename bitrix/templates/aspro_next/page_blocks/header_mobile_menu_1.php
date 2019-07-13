@@ -51,3 +51,7 @@
 		);?>
 	</div>
 </div>
+<script>
+    $('#mobilemenu ul.top > li:last-child').css('font-weight', 'bold');
+    $('#mobilemenu ul.top > li:last-child').prependTo('.social-icons ul');
+</script>
