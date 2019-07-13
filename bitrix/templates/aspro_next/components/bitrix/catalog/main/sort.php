@@ -117,7 +117,7 @@ $template = "catalog_".$display;
 			}
 			?>
 		</div>
-		<div class="sort_display">
+		<div class="sort_display hidden-xs">
 			<?foreach($arDisplays as $displayType):?>
 				<?
 				$current_url = '';
