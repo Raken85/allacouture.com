@@ -1736,7 +1736,15 @@ background: #fff!important;
 #bx-soa-delivery {
     display: none;
 }
-
+.mega-menu table .dropdown-menu{
+    align-items: unset;
+}
+.mega-menu table .dropdown-menu li.dropdown-submenu > .dropdown-menu > li > a{
+    padding: 5px !important;
+}
+.menu-item.dropdown .dropdown-menu .dropdown-submenu .dropdown-menu li{
+    min-width: fit-content;
+}
 
 /* mobile */
 @media (max-width: 767px) {
