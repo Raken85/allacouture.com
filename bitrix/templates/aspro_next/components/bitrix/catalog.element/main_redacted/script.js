@@ -4267,3 +4267,33 @@ jQuery(function($){
 	$('a.zoom_picture').easyZoom();
 
 });
+
+var li_sum_width = 0,
+	li = $('.bx_size li'),
+    li_length = li.length,
+	container_width = $('.bx_size').width(),
+	dif_width = 0;
+$(li[li_length-1]).css('margin-right', '0');
+li.each(function(){
+    li_sum_width = li_sum_width + $(this).outerWidth(true);
+});
+if (li_sum_width > container_width) {
+	var padding = 10,
+		margin = 8;
+	for (var i = 0; i < 10; i++) {
+        li_sum_width = 0;
+        padding--;
+        margin--;
+        li.each(function(){
+        	$(this).css('padding', '0 ' + padding + 'px');
+        	$(this).css('margin', '0 ' + margin + 'px');
+            li_sum_width = li_sum_width + $(this).outerWidth(true);
+        });
+        if (li_sum_width < container_width) {
+        	li.find('span.cnt').each(function () {
+				$(this).css('padding', padding + 'px' + ' 0');
+            });
+        	break;
+        }
+	}
+}
