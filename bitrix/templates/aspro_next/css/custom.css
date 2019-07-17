@@ -1793,8 +1793,8 @@ background: #fff!important;
     .info_item .top_info{
         padding-top: 0;
     }
-    .item_slider.flex.flexslider.color-controls.flexslider-init.flexslider-control-nav{
-        max-height: 290px;
+    .catalog_detail.detail.element_custom .item_slider.flex.flexslider.color-controls.flexslider-init.flexslider-control-nav{
+        max-height: 410px;
     }
     #mobilemenu .menu>ul>li.catalog_li > a{
         background: unset;
