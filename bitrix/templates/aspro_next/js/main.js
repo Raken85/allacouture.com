@@ -6821,6 +6821,10 @@ BX.addCustomEvent('onSubmitForm', function(eventdata){
 //link href replace
 $(document).ready(function() {
 	$('.hidden-link-class').replaceWith(function(){
-		return'<a href="'+$(this).data('link')+'" class="'+$(this).data('class')+'" rel="nofollow" target="_blank">'+$(this).html()+'</a>';
+		if ($(this).data('link') == '/personal/') {
+            return'<a href="'+$(this).data('link')+'" class="'+$(this).data('class')+'" rel="nofollow">'+$(this).html()+'</a>';
+		} else {
+            return'<a href="'+$(this).data('link')+'" class="'+$(this).data('class')+'" rel="nofollow" target="_blank">'+$(this).html()+'</a>';
+        }
 	});
 });
