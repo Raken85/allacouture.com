@@ -3395,7 +3395,7 @@ $(document).ready(function(){
 					}
 					$wrap.data('params', params)
 				}
-				$('body').css({'overflow': 'hidden', 'postition': 'fixed'});
+				$('body').css({'overflow': 'hidden', 'position': 'fixed'});
 			}
 		}
 
@@ -3433,7 +3433,7 @@ $(document).ready(function(){
 						$scroller.css('height', '')
 					}, 400)
 				}
-                $('body').css({'overflow': 'visible', 'postition': 'relative'});
+                $('body').css({'overflow': 'visible', 'position': 'relative'});
 			}
 		}
 
