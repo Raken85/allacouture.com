@@ -96,8 +96,8 @@ $URL2 = CFile::GetPath($arProps[MORE_PHOTO][VALUE][0]);
 									<img class="noborder"  src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="<?=$a_alt;?>" title="<?=$a_title;?>" />
 									<img   id="q<? echo $arItem['ID']; ?>FOTO" class="second " src="<?=$URL?>" alt="<?=$a_alt;?>" title="<?=$a_title;?>" />
 								<?elseif( !empty($arItem["DETAIL_PICTURE"])):?>
-									<?$img = CFile::ResizeImageGet($arItem["DETAIL_PICTURE"], array( "width" => 400, "height" => 400), BX_RESIZE_IMAGE_PROPORTIONAL,true );?>
-									<img class="noborder"  src="<?=$img["src"]?>" alt="<?=$a_alt;?>" title="<?=$a_title;?>" />
+									<?//$img = CFile::ResizeImageGet($arItem["DETAIL_PICTURE"], array( "width" => 400, "height" => 400), BX_RESIZE_IMAGE_PROPORTIONAL,true );?>
+									<img class="noborder"  src="<?=$arItem["DETAIL_PICTURE"]["SRC"]//$img["src"]?>" alt="<?=$a_alt;?>" title="<?=$a_title;?>" />
 									<img   id="q<? echo $arItem['ID']; ?>FOTO" class="second " src="<?=$URL?>" alt="<?=$a_alt;?>" title="<?=$a_title;?>" />
 								<?else:?>
 									<img class="noborder" src="<?=$URL2?>" alt="<?=$a_alt;?>" title="<?=$a_title;?>" />
