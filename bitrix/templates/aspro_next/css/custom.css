@@ -1897,10 +1897,10 @@ background: #fff!important;
     .bx_compare .frame.props .wraps{
         margin-left: -73%;
     }
-    .image_wrapper_block, .image_wrapper_block a {
+    .bx_compare .image_wrapper_block a {
         height: 170px;/*standart 170px; custom 400px;*/
     }
-    .cost.prices .price, .module-cart .row_titles .item_title, .module-cart .row_values .price {
+    .bx_compare .cost.prices .price, .bx_compare .module-cart .row_titles .item_title, .bx_compare .module-cart .row_values .price {
         font-weight: bold;/*standart bold; custom normal;*/
     }
     .bx_compare .compare_view td:not(:first-child) {
@@ -1911,13 +1911,13 @@ background: #fff!important;
         min-width: calc((100vw * 0.5) - 15px);
         max-width: calc((100vw * 0.5) - 15px);
     }
-    .flex-direction-nav {
+    .bx_compare .flex-direction-nav {
         display: block;/*standart block; custom none;*/
     }
-    .prop_title_table {
+    .bx_compare .prop_title_table {
         width: 231px;/*standart 231px; custom 100%;*/
     }
-    .data_table_props.compare_view.active.clone tr {
+    .bx_compare .data_table_props.compare_view.active.clone tr {
         opacity: unset;/*custom 0;*/
     }
     .bx_compare .prop_title_table .data_table_props tr td:first-child {
@@ -1928,16 +1928,16 @@ background: #fff!important;
         visibility: hidden;/*standart hidden; custom visible;*/
         font-weight: bold;/*standart bold; custom normal;*/
     }
-    .prop_title_table .data_table_props td {
+    .bx_compare .prop_title_table .data_table_props td {
         opacity: 0;/*standart 0; custom 1;*/
         visibility: hidden;/*standart hidden; custom visible;*/
         text-align: left;/*standart left; custom center;*/
     }
-    .data_table_props td:first-child {
+    .bx_compare .data_table_props td:first-child {
         max-width: 230px;/*standart 230px; custom 230px !important;*/
         width: 230px;/*standart 230px; custom 230px !important;*/
     }
-    .data_table_props.compare_view.active.clone tr {
+    .bx_compare .data_table_props.compare_view.active.clone tr {
         /*opacity: unset;*/
     }
 
