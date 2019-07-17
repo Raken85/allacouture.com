@@ -600,6 +600,20 @@ if(!funcDefined('initSelects')){
 //   });
 // });
 
+$(document).ready(function () {
+    setTimeout(function () {
+        var g_content = $('.goog-te-menu-frame.skiptranslate').contents();
+        console.log(g_content);
+        (g_content).find('body').css('overflow', 'scroll');
+        $(g_content).find('.goog-te-menu2').each(function () {
+            $(this).css('overflow', 'unset');
+        });
+        $(g_content).find('.goog-te-menu2-colpad').each(function () {
+            $(this).css('display', 'none');
+        });
+        $(g_content).find('tr').css({'display': 'grid', 'grid-template-columns': '1fr 1fr'});
+    }, 2000);
+});
 
 /**
  * bxSlider v4.2.1d

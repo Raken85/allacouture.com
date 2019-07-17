@@ -2351,9 +2351,12 @@ if ($arResult['CATALOG'] && $arParams['USE_GIFTS_MAIN_PR_SECTION_LIST'] == 'Y' &
 	});
 	$(document).ready(function () {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-            $('#s2u-open-credit-button').appendTo('.wrapp_one_click');
-            $('#s2u-credit-window-text').appendTo('.wrapp_one_click');
-            $('.wrapp_one_click .white').removeClass('white');
+            if ($('button').is('#s2u-open-credit-button')) {
+                $('.wrapp_one_click .one_click').css({'width': 'min-content', 'float': 'left'});
+                $('#s2u-open-credit-button').css({'float': 'right'});
+                $('#s2u-open-credit-button').appendTo('.wrapp_one_click');
+                $('#s2u-credit-window-text').appendTo('.wrapp_one_click');
+            }
         }
     });
 </script>

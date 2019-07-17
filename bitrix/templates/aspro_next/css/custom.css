@@ -1816,7 +1816,10 @@ background: #fff!important;
         text-align: unset;
     }
     .catalog_detail.detail.element_custom .buy_block .wrapp_one_click .one_click{
-        margin-right: 20px;
+        width: 100%;
+        background-color: #000000;
+        border-color: #000000;
+        color: #ffffff !important;
     }
     .bottom_slider.specials.tab_slider_wrapp .wrapper_inner .tab_slider_wrapp ul.tabs > li span{
         font-size: 16px;
@@ -1880,6 +1883,67 @@ background: #fff!important;
     }
     .item_slider.flex .slides > li > a{
         height: 335px;
+    }
+
+
+    .bx_compare .frame {
+        margin: 0 0 0 130px;/*margin: 0;*/
+    }
+    .bx_compare .compare_view.top td {
+        width: 230px;/*standart 230px; custom 327px;*/
+        min-width: 230px;/*standart 230px; custom 327px;*/
+        max-width: 230px;/*standart 230px; custom 327px;*/
+    }
+    .bx_compare .frame.props .wraps{
+        margin-left: -73%;
+    }
+    .image_wrapper_block, .image_wrapper_block a {
+        height: 170px;/*standart 170px; custom 400px;*/
+    }
+    .cost.prices .price, .module-cart .row_titles .item_title, .module-cart .row_values .price {
+        font-weight: bold;/*standart bold; custom normal;*/
+    }
+    .bx_compare .compare_view td:not(:first-child) {
+        width: 230px;/*standart 230px; custom 327px;*/
+        min-width: 230px;/*standart 230px; custom 327px;*/
+        max-width: 230px;/*standart 230px; custom 327px;*/
+        width: calc((100vw * 0.5) - 15px);
+        min-width: calc((100vw * 0.5) - 15px);
+        max-width: calc((100vw * 0.5) - 15px);
+    }
+    .flex-direction-nav {
+        display: block;/*standart block; custom none;*/
+    }
+    .prop_title_table {
+        width: 231px;/*standart 231px; custom 100%;*/
+    }
+    .data_table_props.compare_view.active.clone tr {
+        opacity: unset;/*custom 0;*/
+    }
+    .bx_compare .prop_title_table .data_table_props tr td:first-child {
+        opacity: 1;/*standart 1; custom 0;*/
+        visibility: visible;/*standart visible; custom hidden;*/
+    }
+    .bx_compare .data_table_props tr td:first-of-type {
+        visibility: hidden;/*standart hidden; custom visible;*/
+        font-weight: bold;/*standart bold; custom normal;*/
+    }
+    .prop_title_table .data_table_props td {
+        opacity: 0;/*standart 0; custom 1;*/
+        visibility: hidden;/*standart hidden; custom visible;*/
+        text-align: left;/*standart left; custom center;*/
+    }
+    .data_table_props td:first-child {
+        max-width: 230px;/*standart 230px; custom 230px !important;*/
+        width: 230px;/*standart 230px; custom 230px !important;*/
+    }
+    .data_table_props.compare_view.active.clone tr {
+        /*opacity: unset;*/
+    }
+
+    .goog-te-menu-frame.skiptranslate{
+        width: 100% !important;
+        height: 300px !important;
     }
 }
 
