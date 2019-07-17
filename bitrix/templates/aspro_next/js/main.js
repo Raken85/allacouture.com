@@ -3395,7 +3395,7 @@ $(document).ready(function(){
 					}
 					$wrap.data('params', params)
 				}
-				$('body').css('overflow', 'hidden');
+				$('body').css('overflow', 'hidden !important');
 			}
 		}
 
