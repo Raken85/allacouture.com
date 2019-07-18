@@ -6,6 +6,11 @@ $APPLICATION->SetTitle("Заполнение формы");
 section.page-top {display:none;}
 .form.inline{margin-top:15px;}
 .form .form-header{border-top: 1px solid #f5f5f5 !important;padding: 15px 0px 9px 0px;}
+@media (max-width: 767px) {
+    .basket_wrapp .header-cart {
+        display: none;
+    }
+}
 </style>
 <?
 CNext::GetFrontParametrValue('', SITE_ID);
