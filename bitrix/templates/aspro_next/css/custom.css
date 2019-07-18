@@ -1893,6 +1893,9 @@ background: #fff!important;
     #mobilemenu .menu>ul>li.catalog_li .dropdown li .dropdown li a{
         padding-left: 30px;
     }
+    .block .catalog_block .catalog_item_wrapp .catalog_item{
+        min-height: 744px;
+    }
 
 
     .bx_compare .frame {
