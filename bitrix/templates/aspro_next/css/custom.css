@@ -1906,9 +1906,6 @@ background: #fff!important;
     .bx_compare .frame.props .wraps{
         margin-left: -73%;
     }
-    .bx_compare .image_wrapper_block a {
-        height: 170px;/*standart 170px; custom 400px;*/
-    }
     .bx_compare .cost.prices .price, .bx_compare .module-cart .row_titles .item_title, .bx_compare .module-cart .row_values .price {
         font-weight: bold;/*standart bold; custom normal;*/
     }
