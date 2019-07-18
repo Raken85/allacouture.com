@@ -1929,6 +1929,7 @@ background: #fff!important;
     .bx_compare .prop_title_table .data_table_props tr td:first-child {
         opacity: 1;/*standart 1; custom 0;*/
         visibility: visible;/*standart visible; custom hidden;*/
+        min-width: 150px;
     }
     .bx_compare .data_table_props tr td:first-of-type {
         visibility: hidden;/*standart hidden; custom visible;*/
