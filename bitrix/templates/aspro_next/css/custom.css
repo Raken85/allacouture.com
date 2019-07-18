@@ -1887,6 +1887,12 @@ background: #fff!important;
     .basket-item-property{
         text-align: center;
     }
+    #mobilemenu .menu>ul>li.catalog_li > a, #mobilemenu .menu>ul>li.catalog_li .dropdown li a{
+        padding-left: 19px;
+    }
+    #mobilemenu .menu>ul>li.catalog_li .dropdown li .dropdown li a{
+        padding-left: 30px;
+    }
 
 
     .bx_compare .frame {
