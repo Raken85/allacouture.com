@@ -1287,7 +1287,7 @@ if(!funcDefined("oneClickBuy")) {
 		fill_prop.item=item;
 		fill_prop.ocb_item="Y";
 
-		if(window.matchMedia('(min-width:992px)').matches)
+		if(window.matchMedia('(min-width:992px)').matches || window.matchMedia('(min-width:768px)').matches)
 		{
 			if(!$(that).hasClass('clicked'))
 			{
