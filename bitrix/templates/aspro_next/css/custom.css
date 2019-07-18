@@ -1884,6 +1884,9 @@ background: #fff!important;
     .item_slider.flex .slides > li > a{
         height: 335px;
     }
+    .basket-item-property{
+        text-align: center;
+    }
 
 
     .bx_compare .frame {
