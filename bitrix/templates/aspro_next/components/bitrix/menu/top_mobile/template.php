@@ -25,7 +25,7 @@
 109004 Москва<br>
 ул. Николоямская, дом 52 стр.1
 </p>
-<p class="mob_menu_adress" style="background: unset;font-weight: normal;">
+<p class="mob_menu_adress" style="font-weight: normal;background-image: url('/images/adress_black.png');">
     U.A.E., Dubai,<br>
     Jumeirah one, La mer Central, 445-a unit
 </p>
