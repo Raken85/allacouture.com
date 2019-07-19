@@ -2001,8 +2001,8 @@ background: #fff!important;
         width: 100% !important;
         height: 300px !important;
     }
-    .front.wide_page .sections_wrapper .top_block a{
-        float: left;
+    .front.wide_page .sections_wrapper .top_block{
+        display: inline-grid;
     }
     .front.wide_page .sections_wrapper {
         padding-bottom: 50px;
