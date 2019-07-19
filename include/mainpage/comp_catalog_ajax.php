@@ -23,8 +23,8 @@ if($bAjaxMode)
 	if(CNext::GetFrontParametrValue('CATALOG_COMPARE') == 'N')
 		$arComponentParams["DISPLAY_COMPARE"] = 'N';
 	/**/$arComponentParams['CACHE_TYPE'] = 'N';
+	/**/$arComponentParams['PROPERTY_HIT_VALUE'] = $arGlobalFilter['PROPERTY_HIT_VALUE'][0] ? CUtil::translit($arGlobalFilter['PROPERTY_HIT_VALUE'][0], 'ru') : 'main';
 	?>
-	
 	<?$APPLICATION->IncludeComponent(
 		"bitrix:catalog.section",
 		"catalog_block_front_custom",

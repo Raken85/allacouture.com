@@ -1,13 +1,12 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?$this->setFrameMode(true);?>
 <?if( count( $arResult["ITEMS"] ) >= 1 ){?>
-	<div class="top_wrapper items_wrapper">
+    <ul class="slider_navigation top custom_flex border main_page_hit">
+        <li class="<?=$arParams['PROPERTY_HIT_VALUE']?>_nav" data-code="<?=$arParams['PROPERTY_HIT_VALUE']?>"></li>
+    </ul>
+	<div class="top_wrapper items_wrapper flexslider" data-plugin-options='{"animation": "slide", "animationSpeed": 600, "directionNav": true, "controlNav": false, "animationLoop": true, "slideshow": false, "controlsContainer": ".<?=$arParams['PROPERTY_HIT_VALUE']?>_nav", "counts": [4,3,2,1,1]}'>
 		<div class="fast_view_params" data-params="<?=urlencode(serialize($arTransferParams));?>"></div>
-        <div class="bx_nav">
-            <div class="bx_nav_prev bx_nav_arrow"></div>
-            <div class="bx_nav_next bx_nav_arrow"></div>
-        </div>
-		<div class="catalog_block items row margin0">
+		<ul class="catalog_block items row slides">
 		<?foreach($arResult["ITEMS"] as $arItem){?>
 
 			<?$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "ELEMENT_EDIT"));
@@ -44,7 +43,7 @@
 			$elementName = ((isset($arItem['IPROPERTY_VALUES']['ELEMENT_PAGE_TITLE']) && $arItem['IPROPERTY_VALUES']['ELEMENT_PAGE_TITLE']) ? $arItem['IPROPERTY_VALUES']['ELEMENT_PAGE_TITLE'] : $arItem['NAME']);
 			?>
 
-			<div class="catalog_item_wrapp col-m-20 col-lg-<?=$col;?> col-md-4 col-sm-<?=floor(12 / round($arParams['LINE_ELEMENT_COUNT'] / 2))?> item" data-col="<?=$col;?>">
+			<li class="catalog_item_wrapp col-m-20 col-lg-<?=$col;?> col-md-4 col-sm-<?=floor(12 / round($arParams['LINE_ELEMENT_COUNT'] / 2))?> item" data-col="<?=$col;?>">
 				<div class="catalog_item item_wrap " id="<?=$this->GetEditAreaId($arItem['ID']);?>">
 					<div class="inner_wrap">
 						<div class="image_wrapper_block shine">
@@ -211,51 +210,15 @@ opacity:1;
 <div class="fast_view_block" style="display: none" data-event="jqm" data-param-form_id="fast_view" data-param-iblock_id="<?=$arParams["IBLOCK_ID"];?>" data-param-id="<?=$arItem["ID"];?>" data-param-item_href="<?=urlencode($arItem["DETAIL_PAGE_URL"]);?>" data-name="fast_view"><?=$fast_view_text;?></div>
 					</div>
 				</div>
-			</div>
+			</li>
 		<?}?>
-		</div>
+		</ul>
 	</div>
     <script>
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-            $('.items_wrapper .bx_nav').remove();
-        } else {
-            var width = $('.tabs_content').width();
-            var width20;
-            var maxSlides;
-            if (width < 700) {
-                width20 = width / 2;
-                maxSlides = 2;
-            } else {
-                width20 = width / 5;
-                maxSlides = 5;
-            }
-            $('.catalog_block').each(function () {
-                if (!($(this).hasClass('bx_slider_active'))) {
-                    var nav = $(this).siblings('.bx_nav');
-                    var prev = $(nav).find('.bx_nav_prev');
-                    var next = $(nav).find('.bx_nav_next');
-                    $(this).addClass('bx_slider_active');
-                    var slider = $(this).bxSlider({
-                        slideWidth: width20,
-                        minSlides: maxSlides,
-                        maxSlides: maxSlides,
-                        nextSelector: next,
-                        nextText: '>',
-                        prevSelector: prev,
-                        prevText: '<',
-                        touchEnabled: false,
-                        onSliderLoad: function () {
-                            var wrapper = $(this).parents('.bx-wrapper');
-                            var width = $(wrapper).css('max-width');
-                            var maxWidth = Math.floor(Number(width.replace('px', '')) / 100);
-                            if (maxWidth > 9) {
-                                maxWidth = 8;
-                            }
-                            $(this).parents('.bx-wrapper').css('margin-right', maxWidth + 'px');
-                        }
-                    });
-                }
-            });
-        }
+        $(document).ready(function () {
+            InitFlexSlider();
+            $('.catalog_block .catalog_item_wrapp .catalog_item .item_info .item-title').sliceHeight({item:'.catalog_item', mobile: true});
+            $('.catalog_block .catalog_item_wrapp .catalog_item .item_info').sliceHeight({item:'.catalog_item', mobile: true});
+        });
     </script>
 <?}?>
