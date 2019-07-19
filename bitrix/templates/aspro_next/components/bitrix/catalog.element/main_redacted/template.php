@@ -917,6 +917,9 @@ $APPLICATION->IncludeComponent("step2use:kupivcredit.button", "template1", Array
 				</div>
 			<?$frame->end();?>
 			</div>
+            <div class="delivery_banner">
+                <img src="<?=SITE_DIR.'images/delivery_banner.png'?>">
+            </div>
 			<?if(is_array($arResult["STOCK"]) && $arResult["STOCK"]):?>
 				<div class="stock_wrapper">
 					<?foreach($arResult["STOCK"] as $key => $arStockItem):?>
@@ -1259,6 +1262,9 @@ $APPLICATION->IncludeComponent("step2use:kupivcredit.button", "template1", Array
 	<div class="row">
 		<div class="col-md-9">
 <?endif;?>
+<div class="delivery_banner_mobile">
+    <img src="<?=SITE_DIR.'images/delivery_banner.png'?>">
+</div>
 <div class="tabs_section">
 	<?
 	$showProps = false;
