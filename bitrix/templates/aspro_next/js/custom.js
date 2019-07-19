@@ -623,7 +623,6 @@ $(document).ready(function () {
       }, 1000);
     }
   }
-  console.log('matchMedia min-width: 768px = ' + window.matchMedia('screen and (min-width: 768px)').matches);
   if (!(window.matchMedia('screen and (min-width: 768px)').matches))
     googleTranslateMobile();
 });
