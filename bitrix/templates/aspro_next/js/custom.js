@@ -601,27 +601,29 @@ if(!funcDefined('initSelects')){
 // });
 
 $(document).ready(function () {
-    $('#mobileheader').on('click', '.svg-inline-compare', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        window.open(window.location.protocol + '//' + window.location.hostname + '/catalog/compare.php',"_self")
-    });
-    function googleTranslateMobile() {
-        if ($("iframe").is(".goog-te-menu-frame.skiptranslate")) {
-            var g_content = $('.goog-te-menu-frame.skiptranslate').contents();
-            (g_content).find('body').css('overflow', 'scroll');
-            $(g_content).find('.goog-te-menu2').each(function () {
-                $(this).css('overflow', 'unset');
-            });
-            $(g_content).find('.goog-te-menu2-colpad').each(function () {
-                $(this).css('display', 'none');
-            });
-            $(g_content).find('tr').css({'display': 'grid', 'grid-template-columns': '1fr 1fr'});
-        } else {
-            setTimeout(function () {
-                googleTranslateMobile();
-            }, 1000);
-        }
+  $('#mobileheader').on('click', '.svg-inline-compare', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    window.open(window.location.protocol + '//' + window.location.hostname + '/catalog/compare.php',"_self")
+  });
+  function googleTranslateMobile() {
+    if ($("iframe").is(".goog-te-menu-frame.skiptranslate")) {
+      var g_content = $('.goog-te-menu-frame.skiptranslate').contents();
+      (g_content).find('body').css('overflow', 'scroll');
+      $(g_content).find('.goog-te-menu2').each(function () {
+          $(this).css('overflow', 'unset');
+      });
+      $(g_content).find('.goog-te-menu2-colpad').each(function () {
+          $(this).css('display', 'none');
+      });
+      $(g_content).find('tr').css({'display': 'grid', 'grid-template-columns': '1fr 1fr'});
+    } else {
+      setTimeout(function () {
+          googleTranslateMobile();
+      }, 1000);
     }
+  }
+  console.log('matchMedia min-width: 768px = ' + window.matchMedia('screen and (min-width: 768px)').matches);
+  if (!(window.matchMedia('screen and (min-width: 768px)').matches))
     googleTranslateMobile();
 });
