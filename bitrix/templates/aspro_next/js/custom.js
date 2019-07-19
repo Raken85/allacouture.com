@@ -601,6 +601,11 @@ if(!funcDefined('initSelects')){
 // });
 
 $(document).ready(function () {
+    $('#mobileheader').on('click', '.svg-inline-compare', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        window.open(window.location.protocol + '//' + window.location.hostname + '/catalog/compare.php',"_self")
+    });
     setTimeout(function () {
         var g_content = $('.goog-te-menu-frame.skiptranslate').contents();
         console.log(g_content);
