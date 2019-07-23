@@ -34,8 +34,8 @@ $arCounters = CNext::updateBasketCounters(array('READY' => array('COUNT' => $nor
 
 	<div class="opener">
 		<div title="<?=$arCounters['READY']['TITLE']?>" data-type="AnDelCanBuy" class="basket_count small clicked<?=(!$arCounters['READY']['COUNT'] ? ' empty' : '')?>">
-			<?/*<a href="<?=$arCounters['READY']['HREF']?>"></a>*/?>
-			<span class="hidden-link-class" data-link="<?=$arCounters['READY']['HREF']?>"></span>
+			<a href="<?=$arCounters['READY']['HREF']?>"></a>
+			<?/*<span class="hidden-link-class" data-link="<?=$arCounters['READY']['HREF']?>"></span>*/?>
 			<div class="wraps_icon_block basket">
 				<div class="count<?=(!$arCounters['READY']['COUNT'] ? ' empty_items' : '')?>">
 					<span>
