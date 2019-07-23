@@ -1899,9 +1899,6 @@ background: #fff!important;
     .bottom_slider.specials.tab_slider_wrapp .wrapper_inner .tab_slider_wrapp ul.tabs > li span{
         font-size: 16px;
     }
-    .basket_wrapp .header-cart {
-        display: block;
-    }
     .basket-checkout-block-total-price-inner{
         padding-top: 0;
     }
@@ -1999,8 +1996,14 @@ background: #fff!important;
     #mobilemenu .menu>ul>li.catalog_li .dropdown li .dropdown li a{
         padding-left: 30px;
     }
-
-
+    #mobileheader .mobileheader-v1 .pull-right .wrap_basket .compare{
+        position: absolute;
+        display: unset;
+        right: 65px;
+    }
+    #mobileheader .mobileheader-v1 .pull-right .wrap_basket .compare .count{
+       top: 14px;
+    }
     .bx_compare .frame {
         margin: 0 0 0 130px;/*margin: 0;*/
     }
