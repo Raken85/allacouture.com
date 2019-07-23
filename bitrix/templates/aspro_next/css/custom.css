@@ -2071,6 +2071,10 @@ background: #fff!important;
     .instagram_ajax .instagram{
         margin-top: -50px;
     }
+    .sections_wrapper .list .item:not(.section_item) .img{
+        width: auto;
+        height: unset;
+    }
 }
 
 /*catalog razdeli ikonki*/
