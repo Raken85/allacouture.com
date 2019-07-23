@@ -1850,8 +1850,11 @@ background: #fff!important;
         font-size: 8px;
     }
     .catalog_detail.detail.element_custom .cost.prices .price{
-        font-size: 16px;
+        font-size: 20px;
         font-weight: normal;
+    }
+    .catalog_detail.detail.element_custom .cost.prices .price .price_currency{
+        font-weight: 100;
     }
     .catalog_detail .item_main_info .right_info .info_item{
         padding-right: 0;
