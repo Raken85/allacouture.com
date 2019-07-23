@@ -1,5 +1,5 @@
 @media (max-width: 767px) {
-    .best_block.tab_slider_wrapp .item .catalog_item .item_info {
+    /*.best_block.tab_slider_wrapp .item .catalog_item .item_info {
         text-align: left !important;
         padding-left: 38%;
     }
@@ -8,5 +8,12 @@
     }
     .wrapper_inner .cost.prices .price{
         margin-left: 0 !important;
+    }*/
+    .catalog_block .item-stock, .catalog_item .cost.prices{
+        margin: 0 !important;
+    }
+    .catalog_block .catalog_item img{
+        max-width: 100% !important;
+        left: 0 !important;
     }
 }
