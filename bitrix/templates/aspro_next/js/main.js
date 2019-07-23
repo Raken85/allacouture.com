@@ -165,10 +165,13 @@ if(!funcDefined('basketFly')){
 					}
 				}
 			}
-            var isWished = $('[data-item="'+item2+'"]').hasClass('added');
-            if (action == 'wish' && opener == 'N' && isWished) {
-                $('<div id="wish_block_modal">Товар отложен<span onclick="$(\'#wish_block_modal\').remove();$(\'.header-cart .basket_fly .opener\').css(\'overflow\', \'hidden\');">x</span></div>').prependTo($('.opener'));
-                $('.header-cart .basket_fly .opener').css('overflow', 'visible');
+			var isWished = $('[data-item="'+item2+'"]').hasClass('added');
+			if (action == 'wish' && opener == 'N' && isWished) {
+				$('<div id="wish_block_modal">Товар отложен<span onclick="$(\'#wish_block_modal\').remove();$(\'.header-cart .basket_fly .opener\').css(\'overflow\', \'hidden\');">x</span></div>').prependTo($('.opener'));
+				$('.header-cart .basket_fly .opener').css('overflow', 'visible');
+				setTimeout(function () {
+					$('#wish_block_modal').fadeOut(400);
+				}, 2000);
             }
 		}));
 	}
