@@ -1853,8 +1853,12 @@ background: #fff!important;
         font-size: 16px;
         font-weight: normal;
     }
-    .catalog_detail.detail.element_custom .buy_block .to-cart{
+    .catalog_detail .item_main_info .right_info .info_item{
+        padding-right: 0;
+    }
+    .catalog_detail.detail.element_custom .buy_block .to-cart, .catalog_detail.detail.element_custom .buy_block .in-cart{
         width: 100%;
+        padding: 15px 25px;
     }
     .info_item .middle_info .buy_block .wrapp_one_click{
         text-align: unset;
