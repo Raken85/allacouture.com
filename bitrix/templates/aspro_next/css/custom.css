@@ -1790,7 +1790,31 @@ background: #fff!important;
         margin-bottom: 30px;
     }
     .main_page_hit{
-        display: none;
+        position: unset !important;
+        text-align: center;
+    }
+    .main_page_hit .flex-control-nav.flex-control-paging{
+        position: absolute;
+        top: 530px;
+        left: 0;
+        right: 0;
+    }
+    .main_page_hit .flex-direction-nav{
+        display: block !important;
+    }
+    .main_page_hit .flex-direction-nav .flex-nav-prev{
+        position: absolute;
+        top: 200px;
+        left: 0;
+        z-index: 5;
+        border: unset !important;
+    }
+    .main_page_hit .flex-direction-nav .flex-nav-next{
+        position: absolute;
+        top: 200px;
+        right: 0;
+        z-index: 5;
+        border: unset !important;
     }
     .maxwidth-theme.banner_custom{
         padding: 0 !important;
