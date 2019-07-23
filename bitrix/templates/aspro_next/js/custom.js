@@ -608,6 +608,7 @@ $(document).ready(function () {
   });
   function googleTranslateMobile() {
     if ($("iframe").is(".goog-te-menu-frame.skiptranslate")) {
+      $('.goog-te-menu-frame.skiptranslate').css('height', window.innerHeight+'px');
       var g_content = $('.goog-te-menu-frame.skiptranslate').contents();
       (g_content).find('body').css('overflow', 'scroll');
       $(g_content).find('.goog-te-menu2').each(function () {
@@ -624,5 +625,6 @@ $(document).ready(function () {
     }
   }
   if (!(window.matchMedia('screen and (min-width: 768px)').matches))
+    $('<style>.goog-te-menu-frame.skiptranslate{height: '+window.innerHeight+'px !important;}</style>').appendTo('head');
     googleTranslateMobile();
 });
