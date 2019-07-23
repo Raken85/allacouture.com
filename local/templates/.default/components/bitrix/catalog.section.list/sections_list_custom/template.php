@@ -14,10 +14,10 @@
 							<div class="image">
 								<?if($arItems["PICTURE"]["SRC"]):?>
 									<?$img = CFile::ResizeImageGet($arItems["PICTURE"]["ID"], array( "width" => 220, "height" => 220 ), BX_RESIZE_IMAGE_EXACT, true );?>
-									<a href="<?=$arItems["SECTION_PAGE_URL"]?>" class="thumb"><img src="<?=$img["src"]?>" alt="<?=($arItems["PICTURE"]["ALT"] ? $arItems["PICTURE"]["ALT"] : $arItems["NAME"])?>" title="<?=($arItems["PICTURE"]["TITLE"] ? $arItems["PICTURE"]["TITLE"] : $arItems["NAME"])?>" /></a>
+									<a href="<?=$arItems["SECTION_PAGE_URL"]?>" class="thumb"><img src="<?=$arItems["PICTURE"]["SRC"]?>" alt="<?=($arItems["PICTURE"]["ALT"] ? $arItems["PICTURE"]["ALT"] : $arItems["NAME"])?>" title="<?=($arItems["PICTURE"]["TITLE"] ? $arItems["PICTURE"]["TITLE"] : $arItems["NAME"])?>" /></a>
 								<?elseif($arItems["~PICTURE"]):?>
 									<?$img = CFile::ResizeImageGet($arItems["~PICTURE"], array( "width" => 220, "height" => 220 ), BX_RESIZE_IMAGE_EXACT, true );?>
-									<a href="<?=$arItems["SECTION_PAGE_URL"]?>" class="thumb"><img src="<?=$img["src"]?>" alt="<?=($arItems["PICTURE"]["ALT"] ? $arItems["PICTURE"]["ALT"] : $arItems["NAME"])?>" title="<?=($arItems["PICTURE"]["TITLE"] ? $arItems["PICTURE"]["TITLE"] : $arItems["NAME"])?>" /></a>
+									<a href="<?=$arItems["SECTION_PAGE_URL"]?>" class="thumb"><img src="<?=$arItems["PICTURE"]["SRC"]?>" alt="<?=($arItems["PICTURE"]["ALT"] ? $arItems["PICTURE"]["ALT"] : $arItems["NAME"])?>" title="<?=($arItems["PICTURE"]["TITLE"] ? $arItems["PICTURE"]["TITLE"] : $arItems["NAME"])?>" /></a>
 								<?else:?>
 									<a href="<?=$arItems["SECTION_PAGE_URL"]?>" class="thumb"><img src="<?=SITE_TEMPLATE_PATH?>/images/catalog_category_noimage.png" alt="<?=$arItems["NAME"]?>" title="<?=$arItems["NAME"]?>" /></a>
 								<?endif;?>
