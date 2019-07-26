@@ -2358,9 +2358,7 @@ if ($arResult['CATALOG'] && $arParams['USE_GIFTS_MAIN_PR_SECTION_LIST'] == 'Y' &
 	$(document).ready(function () {
         if (!(window.matchMedia('screen and (min-width: 768px)').matches)) {
             if ($('button').is('#s2u-open-credit-button')) {
-                $('#s2u-open-credit-button').css({'width': '100%', 'margin-top': '-22px'});
-                $('#s2u-open-credit-button').appendTo('.counter_wrapp');
-                $('#s2u-credit-window-text').appendTo('.counter_wrapp');
+                $('#s2u-open-credit-button').css({'width': $('.button_block.wide').width() + 'px'});
             }
         }
     });

@@ -1893,6 +1893,7 @@ background: #fff!important;
     }
     .info_item .middle_info .buy_block .wrapp_one_click{
         text-align: unset;
+        padding-bottom: 0 !important;
     }
     .catalog_detail.detail.element_custom .buy_block .wrapp_one_click .one_click{
         width: 100%;
