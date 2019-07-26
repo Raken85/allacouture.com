@@ -1886,8 +1886,10 @@ background: #fff!important;
     .catalog_detail.detail.element_custom .buy_block .to-cart, .catalog_detail.detail.element_custom .buy_block .in-cart{
         width: 100%;
         padding: 15px 25px;
-        background: #4fad00;
-        border-color: #4fad00;
+    }
+    .to-cart, .in-cart{
+        background: #4fad00 !important;
+        border-color: #4fad00 !important;
     }
     .info_item .middle_info .buy_block .wrapp_one_click{
         text-align: unset;
