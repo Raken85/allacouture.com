@@ -52,6 +52,11 @@
 	</div>
 </div>
 <script>
-    $('#mobilemenu ul.top > li:last-child').css({'font-size': '15px','font-weight': 'bold', 'margin-left': '-31px'});
+    $('#mobilemenu ul.top > li:last-child').css({
+        'font-size': '15px',
+        'font-weight': 'bold',
+        'margin-left': '-31px',
+        'border-bottom': '1px solid #f2f2f2'
+    });
     $('#mobilemenu ul.top > li:last-child').prependTo('.social-icons ul');
 </script>
