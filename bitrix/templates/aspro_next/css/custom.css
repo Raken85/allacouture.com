@@ -2040,9 +2040,6 @@ background: #fff!important;
         width: 230px;/*standart 230px; custom 327px;*/
         min-width: 230px;/*standart 230px; custom 327px;*/
         max-width: 230px;/*standart 230px; custom 327px;*/
-        width: calc((100vw * 0.5) - 15px);
-        min-width: calc((100vw * 0.5) - 15px);
-        max-width: calc((100vw * 0.5) - 15px);
     }
     .bx_compare .flex-direction-nav {
         display: block;/*standart block; custom none;*/
