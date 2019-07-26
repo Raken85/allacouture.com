@@ -607,7 +607,7 @@ $(document).ready(function () {
     window.open(window.location.protocol + '//' + window.location.hostname + '/catalog/compare.php',"_self")
   });
   function googleTranslateMobile() {
-    if ($("iframe").is(".goog-te-menu-frame.skiptranslate")) {
+    if ($("iframe.goog-te-menu-frame.skiptranslate").contents().find('div').is(".goog-te-menu2")) {
       $('.goog-te-menu-frame.skiptranslate').css('height', window.innerHeight+'px');
       var g_content = $('.goog-te-menu-frame.skiptranslate').contents();
       (g_content).find('body').css('overflow', 'scroll');
@@ -621,7 +621,7 @@ $(document).ready(function () {
     } else {
       setTimeout(function () {
           googleTranslateMobile();
-      }, 1000);
+      }, 500);
     }
   }
   if (!(window.matchMedia('screen and (min-width: 768px)').matches))
