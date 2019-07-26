@@ -1958,6 +1958,9 @@ background: #fff!important;
     .catalog_block .article_block{
         display: none;
     }
+    .catalog_block.items.block_list .stickers{
+        position: static;
+    }
     .catalog_block.items.block_list .rating{
         display: none;
     }
@@ -1972,6 +1975,7 @@ background: #fff!important;
     }
     .catalog_block.items.block_list .catalog_item .item_info{
         padding-bottom: 0;
+        margin-top: -45%;
     }
     .catalog_block.items.block_list .catalog_item .footer_button{
         padding-top: 0;
@@ -1980,7 +1984,7 @@ background: #fff!important;
         padding-bottom: 10px;
     }
     .catalog_block.items.block_list .image_wrapper_block{
-        height: 340px;
+        height: min-content;
     }
     .catalog_block.items.block_list .image_wrapper_block a img{
         margin: 0 auto;
