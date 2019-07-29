@@ -1931,7 +1931,10 @@ background: #fff!important;
         margin-bottom: -15px !important;
         padding-top: 0 !important;
     }
-    .breadcrumbs .drop + .separator {
+    .basket_bigdata_recommended_products .title_block{
+        font-size: 18px;
+    }
+    .breadcrumbs .drop + .separator{
         margin-left: 5px;
     }
     .social_whatsapp_custom{
