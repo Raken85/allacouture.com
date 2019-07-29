@@ -2028,7 +2028,12 @@ background: #fff!important;
         display: unset;
         right: 70px;
     }
-    #mobileheader .mobileheader-v1 .pull-right .wrap_basket .compare .count{
+    #mobileheader .mobileheader-v1 .pull-right .wrap_basket .delay{
+        position: absolute;
+        display: unset;
+        right: 135px;
+    }
+    #mobileheader .mobileheader-v1 .pull-right .wrap_basket .compare .count, #mobileheader .mobileheader-v1 .pull-right .wrap_basket .delay .count{
        top: 14px;
     }
     .bx_compare .frame {
