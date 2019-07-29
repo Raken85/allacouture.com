@@ -2084,6 +2084,9 @@ background: #fff!important;
         right: -8px;
     }
 
+    .goog-te-banner-frame.skiptranslate{
+        display: none;
+    }
     .goog-te-menu-frame.skiptranslate{
         width: 95% !important;
     }
