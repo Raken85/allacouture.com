@@ -2074,6 +2074,9 @@ background: #fff!important;
     .bx_compare .data_table_props.compare_view.active.clone tr {
         /*opacity: unset;*/
     }
+    .bx_compare .compare_view.top .remove{
+        right: -8px;
+    }
 
     .goog-te-menu-frame.skiptranslate{
         width: 95% !important;
