@@ -1779,6 +1779,9 @@ background: #fff!important;
 
 /* mobile */
 @media (max-width: 767px) {
+    .bx_size ul.list_values_wrapper{
+        text-align: center;
+    }
     .delivery_banner{
         display: none;
     }
