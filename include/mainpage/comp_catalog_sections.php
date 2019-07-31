@@ -1,6 +1,6 @@
 <?if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();?> <?global $arTheme, $isShowCatalogSections;?> <?if($isShowCatalogSections):?> <?$APPLICATION->IncludeComponent(
 	"aspro:catalog.section.list.next",
-	"front_sections_theme",
+	"front_sections_theme_custom",
 	Array(
 		"ADD_SECTIONS_CHAIN" => "N",
 		"ALL_URL" => "catalog/",
