@@ -2075,6 +2075,12 @@ background: #fff!important;
     .bx_compare .frame {
         margin: 0 0 0 130px;;/*margin: 100px;*/
     }
+    .bx_compare .image_wrapper_block, .image_wrapper_block a {
+      height: 260px;/*standart 170px; custom 400px;*/
+    }
+    .bx_compare .compare_view .item_block{
+        margin: 0;
+    }
     .bx_compare .compare_view.data_table_props td{
         border: 1px solid #f2f2f2;
     }
@@ -2130,7 +2136,7 @@ background: #fff!important;
         /*opacity: unset;*/
     }
     .bx_compare .compare_view.top .remove{
-        right: -8px;
+        right: 15px;
     }
 
     .goog-te-banner-frame.skiptranslate{
