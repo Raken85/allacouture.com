@@ -1782,11 +1782,16 @@ background: #fff!important;
 .sections_wrapper .list .item:not(.section_item) .img{
     width: 100%;
     height: 100%;
-    margin: 0 0 20px;
+    margin: 0;
 }
 
 /* mobile */
 @media (max-width: 767px) {
+    .sections_wrapper .list .item:not(.section_item) .img{
+      width: 100%;
+      height: 100%;
+      margin: 0 0 20px;
+    }
     font .basket-count .js-basket-block .count{
         left: 27px !important;
         top: -8px !important;
