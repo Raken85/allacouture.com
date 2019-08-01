@@ -2071,15 +2071,15 @@ background: #fff!important;
        top: 14px;
     }
     .bx_compare .frame {
-        margin: 0 0 0 130px;/*margin: 0;*/
+        margin: 0 0 0 130px;;/*margin: 100px;*/
+    }
+    .bx_compare .compare_view.data_table_props td{
+        border: 1px solid #f2f2f2;
     }
     .bx_compare .compare_view.top td {
         width: 230px;/*standart 230px; custom 327px;*/
         min-width: 230px;/*standart 230px; custom 327px;*/
         max-width: 230px;/*standart 230px; custom 327px;*/
-    }
-    .bx_compare .frame.props .wraps{
-        margin-left: -73%;
     }
     .bx_compare .cost.prices .price, .bx_compare .module-cart .row_titles .item_title, .bx_compare .module-cart .row_values .price {
         font-weight: bold;/*standart bold; custom normal;*/
@@ -2092,20 +2092,28 @@ background: #fff!important;
     .bx_compare .flex-direction-nav {
         display: block;/*standart block; custom none;*/
     }
-    .bx_compare .prop_title_table {
-        width: 231px;/*standart 231px; custom 100%;*/
-    }
     .bx_compare .data_table_props.compare_view.active.clone tr {
         opacity: unset;/*custom 0;*/
+    }
+    .bx_compare .prop_title_table {
+        width: 131px;/*standart 231px; custom 100%;*/
     }
     .bx_compare .prop_title_table .data_table_props tr td:first-child {
         opacity: 1;/*standart 1; custom 0;*/
         visibility: visible;/*standart visible; custom hidden;*/
-        min-width: 150px;
+        width: 130px !important;
+        min-width: 130px !important;
+        max-width: 130px !important;
+    }
+    .bx_compare .frame.props .wraps{
+        margin-left: -130px !important;
     }
     .bx_compare .data_table_props tr td:first-of-type {
         visibility: hidden;/*standart hidden; custom visible;*/
         font-weight: bold;/*standart bold; custom normal;*/
+        width: 130px !important;
+        min-width: 130px !important;
+        max-width: 130px !important;
     }
     .bx_compare .prop_title_table .data_table_props td {
         opacity: 0;/*standart 0; custom 1;*/
