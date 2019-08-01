@@ -1784,6 +1784,24 @@ background: #fff!important;
     height: 100%;
     margin: 0;
 }
+/* menu */
+.menu-row .mega-menu table td.wide_menu > .wrap > .dropdown-menu > li.has_img{
+    min-height: 120px;
+}
+.menu-row .mega-menu table td.wide_menu .dropdown-submenu .dropdown-menu{
+    display: block !important;
+}
+.menu-row .mega-menu table td.wide_menu > .wrap > .dropdown-menu > li.has_img .menu_img{
+    width: 80px;
+}
+.menu-row .mega-menu table td.wide_menu > .wrap > .dropdown-menu > li.has_img .menu_img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.mega-menu table .dropdown-menu li.dropdown-submenu a:hover, .mega-menu table .dropdown-menu li a:hover{
+    color: #000 !important;
+    background-color: #fff !important;
+}
 
 /* mobile */
 @media (max-width: 767px) {
