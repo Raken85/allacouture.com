@@ -2081,6 +2081,10 @@ background: #fff!important;
     #mobileheader .mobileheader-v1 .pull-right .wrap_basket .compare .count, #mobileheader .mobileheader-v1 .pull-right .wrap_basket .delay .count{
        top: 14px;
     }
+    #mobileheader .mobileheader-v1 .basket-link.compare .count.empted{
+        background: #b0b0b0;
+        background-color: #b0b0b0;
+    }
     .bx_compare .frame {
         margin: 0 0 0 130px;;/*margin: 100px;*/
     }

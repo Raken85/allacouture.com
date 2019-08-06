@@ -601,6 +601,7 @@ if(!funcDefined('initSelects')){
 // });
 
 $(document).ready(function () {
+  if ($('.wrap_basket .compare span.count').text() == '0') $('.wrap_basket .compare span.count').addClass('empted');
   $('#mobileheader').on('click', '.svg-inline-compare', function (e) {
     e.preventDefault();
     e.stopPropagation();
