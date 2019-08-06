@@ -2084,7 +2084,7 @@ background: #fff!important;
     .bx_compare .frame {
         margin: 0 0 0 130px;;/*margin: 100px;*/
     }
-    .bx_compare .image_wrapper_block, .image_wrapper_block a {
+    .bx_compare .image_wrapper_block, .bx_compare .image_wrapper_block a {
       height: 260px;/*standart 170px; custom 400px;*/
     }
     .bx_compare .compare_view .item_block{
