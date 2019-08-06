@@ -1810,6 +1810,9 @@ background: #fff!important;
 .mega-menu table .dropdown-menu li.dropdown-submenu > a{
     padding: 14px 29px 14px 19px !important;
 }
+.mega-menu table td .wrap > a.dropdown-toggle {
+    padding: 20px 56px 5px 56px;
+}
 
 /* mobile */
 @media (max-width: 767px) {
