@@ -611,7 +611,7 @@ $(document).ready(function () {
     $('.goog-te-menu-frame.skiptranslate').each(function () {
       $(this).css('height', window.innerHeight+'px');
       var g_content = $(this).contents();
-      (g_content).find('body').css({'overflow': 'scroll', 'overflow-y': 'auto', "-webkit-overflow-scrolling": "touch"});
+      (g_content).find('body').css({'overflow': 'visible', "-webkit-overflow-scrolling": "touch"});
       $(g_content).find('.goog-te-menu2').each(function () {
         $(this).css('overflow', 'unset');
       });
