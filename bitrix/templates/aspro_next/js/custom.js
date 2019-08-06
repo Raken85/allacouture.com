@@ -610,7 +610,7 @@ $(document).ready(function () {
     $('.goog-te-menu-frame.skiptranslate').each(function () {
       $(this).css('height', window.innerHeight+'px');
       var g_content = $(this).contents();
-      (g_content).find('body').css({'overflow': 'scroll'});
+      (g_content).find('body').css({'overflow': 'scroll', "-webkit-overflow-scrolling": "touch"});
       $(g_content).find('.goog-te-menu2').each(function () {
         $(this).css('overflow', 'unset');
       });
@@ -620,9 +620,9 @@ $(document).ready(function () {
       $(g_content).find('tr').css({'display': 'grid', 'grid-template-columns': '1fr 1fr'});
     });
     if ($('.goog-te-menu-frame.skiptranslate').is(':visible')) {
-        $('body').css({'overflow': 'hidden', 'position': 'fixed'})
+        $('body').css({'position': 'fixed'})
     } else {
-        $('body').css({'overflow': 'visible', 'position': 'relative'})
+        $('body').css({'position': 'relative'})
     }
   }
   if (!(window.matchMedia('screen and (min-width: 768px)').matches)) {
