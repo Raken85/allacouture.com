@@ -653,7 +653,6 @@ $(document).ready(function () {
   });
   function fixAlterGoogleTranslate() {
     var font = $('.wrap_icon.wrap_basket').children('font');
-    console.log(font);
     if (font.length) {
       font.children('a').each(function(){
         var notTranslatedA = $(this);
