@@ -1777,14 +1777,17 @@ background: #fff!important;
     display: none;
 }
 .sections_wrapper .list .item{
-    padding: 0 0 10px 0;
+    padding: 0;
 }
 .sections_wrapper .list .item:not(.section_item) .img{
     width: 100%;
     height: 100%;
-    margin: 0 0 -15px;
-    padding: 0 0 10px;
 }
+body .sections_wrapper .list .item .name{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
 }
 /* menu */
 .menu-row .mega-menu table td.wide_menu > .wrap > .dropdown-menu > li.has_img{
@@ -1819,7 +1822,6 @@ background: #fff!important;
     .sections_wrapper .list .item:not(.section_item) .img{
       width: 100%;
       height: 100%;
-      margin: 0 0 5px;
     }
     font .basket-count .js-basket-block .count{
         left: 27px !important;
