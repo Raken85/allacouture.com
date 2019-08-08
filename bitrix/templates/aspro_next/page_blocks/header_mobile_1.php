@@ -29,6 +29,14 @@ $logoClass = ($arTheme['COLORED_LOGO']['VALUE'] !== 'Y' ? '' : ' colored');
 		</div>
 		<div class="pull-right">
 			<div class="wrap_icon wrap_basket">
+                <style>
+                    .count{
+                        background: #b0b0b0 !important;
+                    }
+                    .wrap_icon.wrap_basket .svg{
+                        opacity: 0.5;
+                    }
+                </style>
 				<?=CNext::ShowBasketWithCompareLink('', 'big', false, false, true);?>
 			</div>
 		</div>
