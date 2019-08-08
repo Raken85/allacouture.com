@@ -77,7 +77,7 @@ onLoadjqm = function(name, hash, requestData, selector, requestTitle, isButton, 
                     (title.indexOf(':') > 0 ? '' : '<span class="val">'+$(this).find('ul li.active > span').text()+'</span>')+
                   '</span>'+
                 '</div>';
-          
+
         })
         propsHtml += '</div>';
       }
@@ -91,7 +91,7 @@ onLoadjqm = function(name, hash, requestData, selector, requestTitle, isButton, 
                     (title.indexOf(':') > 0 ? '' : '<span class="val">'+$(this).find('ul li.active').html()+'</span>')+
                   '</span>'+
                 '</div>';
-          
+
         })
         propsHtml += '</div>';
       }
@@ -131,9 +131,9 @@ onLoadjqm = function(name, hash, requestData, selector, requestTitle, isButton, 
             '</td>'+
           '</tr></table>'+
         '</div>'+
-        '</div>').prependTo(hash.w.find('.form-wr'));         
+        '</div>').prependTo(hash.w.find('.form-wr'));
         }
-        
+
     }
 
     if(arNextOptions['THEME']['REGIONALITY_SEARCH_ROW'] == 'Y' && (hash.w.hasClass('city_chooser_frame ') || hash.w.hasClass('city_chooser_small_frame')))
@@ -490,7 +490,7 @@ $(document).ready(function() {
       showButtonPanel: true,
       changeYear: true
   };
- 
+
 
 });
 /*$(function () {
@@ -630,13 +630,15 @@ $(document).ready(function () {
       setTimeout(changeGoogleStyles, 50);
     }
   }
-  changeGoogleStyles();
+  if (!(window.matchMedia('screen and (min-width: 768px)').matches)) {
+    $('<style>.goog-te-menu-frame.skiptranslate{height: ' + window.innerHeight + 'px !important;}</style>').appendTo('head');
+    changeGoogleStyles();
+  }
   $('body').on('click', '#google_translate_element', function(){
     $('.goog-te-menu-frame').each(function() {
       var googContents = $(this).contents();
       if (googContents.find('td').length > 2) {
         googContents.find('.goog-te-menu2-colpad').each(function(){$(this).remove()});
-        var googTr = googContents.find('tr');
         var googTd = googContents.find('td');
         for (i = 1; i < 5; ++i){
           $(googTd[i]).find('a').appendTo($(googTd[0]));
@@ -649,4 +651,26 @@ $(document).ready(function () {
       }
     });
   });
+  function fixAlterGoogleTranslate() {
+    var font = $('.wrap_icon.wrap_basket').children('font');
+    console.log(font);
+    if (font.length) {
+      font.children('a').each(function(){
+        var notTranslatedA = $(this);
+        var className = $(this).attr('class');
+        font.siblings('a').each(function () {
+          if ($(this).hasClass(className)) {
+            $(this).find('span.count').html(notTranslatedA.find('span.count').html());
+          }
+        });
+      });
+      font.remove();
+    }
+  }
+  var mo = new MutationObserver(fixAlterGoogleTranslate),
+      options = {
+        // обязательный параметр: наблюдаем за добавлением и удалением дочерних элементов.
+        'childList': true
+      };
+  mo.observe(document.querySelector('.wrap_icon.wrap_basket'), options);
 });
