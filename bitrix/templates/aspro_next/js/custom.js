@@ -608,6 +608,13 @@ $(document).ready(function () {
     e.stopPropagation();
     window.open(window.location.protocol + '//' + window.location.hostname + '/catalog/compare.php',"_self")
   });
+  function fixGoogleTranslateScroll() {
+    if ($('.goog-te-menu-frame.skiptranslate').is(':visible')) {
+      $('body').css({'position': 'fixed'})
+    } else {
+      $('body').css({'position': 'relative'})
+    }
+  }
   function changeGoogleStyles() {
     if(($goog = $('.goog-te-menu-frame').contents().find('head')).length) {
       var stylesHtml = '<style>'+
@@ -626,6 +633,11 @@ $(document).ready(function () {
           '}' +
           '</style>';
       $goog.prepend(stylesHtml);
+      mo2 = new MutationObserver(fixGoogleTranslateScroll),
+          options2 = {
+            'attributes': true
+          };
+      mo2.observe(document.querySelector('.goog-te-menu-frame'), options2);
     } else {
       setTimeout(changeGoogleStyles, 50);
     }
@@ -666,10 +678,9 @@ $(document).ready(function () {
       font.remove();
     }
   }
-  var mo = new MutationObserver(fixAlterGoogleTranslate),
-      options = {
-        // обязательный параметр: наблюдаем за добавлением и удалением дочерних элементов.
+  var mo1 = new MutationObserver(fixAlterGoogleTranslate),
+      options1 = {
         'childList': true
       };
-  mo.observe(document.querySelector('.wrap_icon.wrap_basket'), options);
+  mo1.observe(document.querySelector('.wrap_icon.wrap_basket'), options1);
 });
