@@ -4,7 +4,7 @@
     <ul class="slider_navigation top custom_flex border main_page_hit">
         <li class="<?=$arParams['PROPERTY_HIT_VALUE']?>_nav" data-code="<?=$arParams['PROPERTY_HIT_VALUE']?>"></li>
     </ul>
-	<div class="top_wrapper items_wrapper flexslider" data-plugin-options='{"animation": "slide", "animationSpeed": 600, "directionNav": true, "controlNav": false, "animationLoop": true, "slideshow": false, "controlsContainer": ".<?=$arParams['PROPERTY_HIT_VALUE']?>_nav", "counts": [5,3,2,2,1]}'>
+	<div class="top_wrapper items_wrapper flexslider" data-plugin-options='{"animation": "slide", "animationSpeed": 600, "directionNav": true, "controlNav": true, "animationLoop": true, "slideshow": false, "controlsContainer": ".<?=$arParams['PROPERTY_HIT_VALUE']?>_nav", "counts": [5,3,2,2,1]}'>
 		<div class="fast_view_params" data-params="<?=urlencode(serialize($arTransferParams));?>"></div>
 		<ul class="catalog_block items row slides">
 		<?foreach($arResult["ITEMS"] as $arItem){?>
@@ -215,11 +215,6 @@ opacity:1;
 		</ul>
 	</div>
     <script>
-        if (!(window.matchMedia('screen and (min-width: 768px)').matches)) {
-            var plaginOptions = $('.top_wrapper.items_wrapper.flexslider').data('plugin-options');
-            plaginOptions['controlNav'] =  true;
-            $('.top_wrapper.items_wrapper.flexslider').data('plugin-options', plaginOptions);
-        }
         $(document).ready(function () {
             InitFlexSlider();
             $('.catalog_block .catalog_item_wrapp .catalog_item .item_info .item-title').sliceHeight({item:'.catalog_item', mobile: true});
