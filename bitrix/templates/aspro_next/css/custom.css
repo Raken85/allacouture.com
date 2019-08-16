@@ -1679,7 +1679,7 @@ tr.param td {
 .image_wrapper_block, .image_wrapper_block a {
   height: 400px;/*standart 170px; custom 400px;*/
 }
-.cost.prices .price, .module-cart .row_titles .item_title, .module-cart .row_values .price {
+.bx_compare .cost.prices .price, .bx_compare .module-cart .row_titles .item_title, .bx_compare .module-cart .row_values .price {
   font-weight: bold;/*standart bold; custom normal;*/
 }
 .bx_compare .compare_view td:not(:first-child) {
@@ -1826,9 +1826,30 @@ body .sections_wrapper .list .item .name{
 .main_page_hit .flex-control-nav.flex-control-paging {
   display: none;
 }
+.breadcrumbs .drop + .separator {
+  margin-left: 5px;
+}
+.item_main_info.noffer.show_un_props{
+  height: 490px;
+}
+body .filter.label_block input + label{
+  color: #000000;
+}
+body .filter.label_block input:hover + label:hover{
+  color: #1d2029;
+}
+.catalog_block.items.block_list .article_block{
+  display: none;
+}
+.bx-sbb-empty-cart-desc{
+  text-decoration: underline;
+}
 
 /* mobile */
 @media (max-width: 767px) {
+  tr.basket-items-list-item-container{
+    padding-top: 11px;
+  }
   .sections_wrapper .list .item:not(.section_item) .img{
     width: 100%;
     height: 100%;

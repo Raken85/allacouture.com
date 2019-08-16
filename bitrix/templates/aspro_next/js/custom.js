@@ -94,6 +94,18 @@ onLoadjqm = function(name, hash, requestData, selector, requestTitle, isButton, 
 
       })
       propsHtml += '</div>';
+    } else if ($('#fast_view_item .sku_props').length) {
+      propsHtml = '<div class="props_item">';
+      $('#fast_view_item .sku_props .bx_catalog_item_scu > div:not(".table_sizes")').each(function(){
+        var title = $(this).find('.bx_item_section_name > span').html();
+        propsHtml += '<div class="prop_item">'+
+            '<span>'+
+            title + (title.indexOf(':') > 0 ? '' : ': ')+
+            (title.indexOf(':') > 0 ? '' : '<span class="val">'+$(this).find('ul li.active').html()+'</span>')+
+            '</span>'+
+            '</div>';
+
+      })
     }
 
     if(hash.w.hasClass('send_gift_frame')){
