@@ -1841,9 +1841,6 @@ body .filter.label_block input:hover + label:hover{
 .catalog_block.items.block_list .article_block{
   display: none;
 }
-.bx-sbb-empty-cart-desc{
-  text-decoration: underline;
-}
 
 /* mobile */
 @media (max-width: 767px) {
